@@ -1,7 +1,7 @@
 # AppPetCare
 Escribir sobre el contexto de su solución.
 
-AppPetCare es una aplicación dedicada al cuidado de perros y gatos que permite al usuario comprar en línea alimentos, juguetes, ropa, accesorios y productos de salud para su mascota. Incluye funciones de registro e inicio de sesión. Su menú de navegación facilita el acceso a categorías de productos, historial y estado de pedidos, perfil de usuario con opciones de dirección y formas de pago, notificaciones de ofertas y promociones, una sección de preguntas frecuentes y soporte mediante chat. Brinda un catálogo con filtros de busqueda, descripciones de los productos con opciones de compra y seguimiento de pedidos hasta la entrega.
+AppPetCare es una aplicación dedicada al cuidado de perros y gatos que permite al usuario comprar en línea alimentos, juguetes, ropa, accesorios y productos de salud para su mascota. Incluye funciones de registro e inicio de sesión. Su menú de navegación facilita el acceso a categorías de productos, historial y estado de pedidos, perfil de usuario con opciones de dirección y formas de pago, notificaciones de ofertas y promociones, una sección de preguntas frecuentes y soporte mediante chat. Brinda un catálogo con filtros de búsqueda, descripciones de los productos con opciones de compra y seguimiento de pedidos hasta la entrega.
 
 ## Modelo Relacional
 - Adjuntar modelo
@@ -122,7 +122,8 @@ Un usuario puede tener múltiples métodos de pago registrados (1:N).
 
 ## Desarrollo de propuesta
 - Escribir sobre la solución a realizar.
-Nuestra aplicación tendrá las siguientes partes: 
+
+Se va a desarrollar la aplicación de la siguiente manera: 
 
 *1. Pantalla de Inicio y Registro*
 
