@@ -1,5 +1,5 @@
 # AppPetCare
-Escribir sobre el contexto de su solución
+Escribir sobre el contexto de su solución.
 
 AppPetCare es una aplicación especializada en alimentos, juguetes, ropa y accesorios y productos para el cuidado de perros y gatos. Tendrá las siguientes partes: 
 
@@ -195,6 +195,7 @@ Ejemplos de uso:
 - cvv
 
 *Relaciones*
+
 Un usuario puede tener múltiples direcciones (1:N).
 Un usuario puede tener un solo carrito de compras (1:1).
 Un carrito de compras puede contener múltiples productos (1:N).
@@ -210,3 +211,5 @@ Un usuario puede tener múltiples métodos de pago registrados (1:N).
 
 ## Desarrollo de propuesta
 - Escribir sobre la solución a realizar.
+
+
