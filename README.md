@@ -134,12 +134,12 @@ Se va a desarrollar la aplicación de la siguiente manera:
   
 *2. Menú de Navegación*
 
-- Inicio: Acceso a la pantalla principal y categorías de productos.
-- Productos: Listado completo de productos para perros y gatos.
-- Pedidos: Historial de pedidos y estado actual de los pedidos.
-- Perfil: Información personal del usuario, direcciones de envío y métodos de pago.
-- Notificaciones: Alertas sobre ofertas, promociones y actualizaciones de pedidos.
-- Chat: Acceso a soporte al cliente y preguntas sobre en.
+- Inicio: Dirigir a los usuarios a la pantalla principal de la aplicación donde podrán acceder a todas las funcionalidades principales y categorías de productos.
+- Productos: Ofrecer un listado completo de todos los productos disponibles para perros y gatos, organizados por categorías.
+- Pedidos: Permitir a los usuarios acceder a su historial de pedidos pasados y ver el estado actual de los pedidos pendientes.
+- Perfil: Proporcionar acceso a la información personal del usuario, direcciones de envío guardadas y métodos de pago configurados.
+- Notificaciones: Mostrar alertas sobre ofertas, promociones y actualizaciones importantes relacionadas con los pedidos.
+- Chat: Integrar un sistema de soporte al cliente en tiempo real donde los usuarios puedan realizar consultas y recibir asistencia directa.
   
 *3. Catálogo de Productos*
 
