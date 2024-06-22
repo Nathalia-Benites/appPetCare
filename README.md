@@ -200,8 +200,8 @@ Historial de Pedidos:
 
 Información Personal:
 - Datos de Usuario: Nombre, correo electrónico, teléfono.
-- Direcciones de envío
-- Métodos de pago
+- Direcciones de envío.
+- Métodos de pago.
   
 *8. Notificaciones y Promociones*
 
