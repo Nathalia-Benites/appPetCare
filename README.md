@@ -28,8 +28,8 @@ Categorías:
 - Salud y Cuidado: Productos de higiene, vitaminas y productos para el cuidado dental.
   
 Filtros y Búsqueda:
-- Filtros avanzados por tamaño, precio, marca, color y material.
-- Barra de búsqueda con autocompletado para encontrar productos específicos rápidamente.
+- Filtros avanzados por tamaño, precio, marca y color.
+- Barra de búsqueda para encontrar productos específicos rápidamente.
   
 *4. Detalles del Producto*
 
@@ -71,7 +71,6 @@ Información Personal:
 - Datos de Usuario: Nombre, correo electrónico, teléfono.
 - Direcciones de envío
 - Métodos de Pago
-
   
 *8. Notificaciones y Promociones*
 
