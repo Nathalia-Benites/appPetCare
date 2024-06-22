@@ -127,10 +127,10 @@ Se va a desarrollar la aplicación de la siguiente manera:
 
 *1. Pantalla de Inicio y Registro*
 
-- Bienvenida y un breve tutorial sobre cómo usar la aplicación.
-- Registro con correo electrónico y número de teléfono.
-- Inicio de sesión con credenciales de usuario existentes.
-- Recuperación de la contraseña en caso de olvido.
+- Recibir a los usuarios que abran la aplicación por primera vez, con un mensaje de bienvenida y se presentará un breve tutorial interactivo que guíen a los usuarios sobre cómo navegar y utilizar las características clave de la aplicación.
+- Implementar un formulario de registro que solicite al usuario su correo electrónico y número de teléfono. Validar estos datos.
+- Permitir a los usuarios iniciar sesión con sus credenciales existentes (correo electrónico y contraseña).
+- Implementar un proceso seguro para que los usuarios puedan restablecer su contraseña en caso de olvido, utilizando un enlace enviado por correo electrónico o un código de verificación SMS.
   
 *2. Menú de Navegación*
 
@@ -192,7 +192,7 @@ Historial de Pedidos:
 Información Personal:
 - Datos de Usuario: Nombre, correo electrónico, teléfono.
 - Direcciones de envío
-- Métodos de Pago
+- Métodos de pago
   
 *8. Notificaciones y Promociones*
 
