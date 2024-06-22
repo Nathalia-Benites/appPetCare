@@ -213,7 +213,7 @@ Información Personal:
 - Respuestas a preguntas frecuentes.
 - Contacto con Soporte en Chat en vivo, correo electrónico y número de teléfono.
 
-Cómo usarías la apliacación:
+Cómo usarías la aplicación:
 1. Abres la aplicación y te registras con tu correo.
 2. Navegas a la categoría de "Ropa para Perros".
 3. Filtras por tamaño y añades un abrigo al carrito.
