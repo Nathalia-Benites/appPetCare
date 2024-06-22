@@ -1,95 +1,7 @@
 # AppPetCare
 Escribir sobre el contexto de su solución.
 
-AppPetCare es una aplicación especializada en alimentos, juguetes, ropa y accesorios y productos para el cuidado de perros y gatos. Tendrá las siguientes partes: 
-
-*1. Pantalla de Inicio y Registro*
-
-- Bienvenida y un breve tutorial sobre cómo usar la aplicación.
-- Registro con correo electrónico y número de teléfono.
-- Inicio de sesión con credenciales de usuario existentes.
-- Recuperación de la contraseña en caso de olvido.
-  
-*2. Menú de Navegación*
-
-- Inicio: Acceso a la pantalla principal y categorías de productos.
-- Productos: Listado completo de productos para perros y gatos.
-- Pedidos: Historial de pedidos y estado actual de los pedidos.
-- Perfil: Información personal del usuario, direcciones de envío y métodos de pago.
-- Notificaciones: Alertas sobre ofertas, promociones y actualizaciones de pedidos.
-- Chat: Acceso a soporte al cliente y preguntas sobre en.
-  
-*3. Catálogo de Productos*
-
-Categorías:
-- Alimentos: Subcategorías para perros y gatos (Pepas, snacks, suplementos).
-- Juguetes: Diversos tipos de juguetes clasificados por tamaño y tipo de mascota.
-- Ropa y Accesorios: Ropa para diferentes tamaños, collares y correas.
-- Salud y Cuidado: Productos de higiene, vitaminas y productos para el cuidado dental.
-  
-Filtros y Búsqueda:
-- Filtros avanzados por tamaño, precio, marca y color.
-- Barra de búsqueda para encontrar productos específicos rápidamente.
-  
-*4. Detalles del Producto*
-
-- Galería de imágenes del producto.
-- Detalles sobre el producto, materiales, instrucciones de uso.
-- Opciones de tamaños y colores.
-- Información sobre el precio y posibles descuentos.
-- Opiniones de otros usuarios y calificación promedio.
-  
-Añadir al Carrito:
-- Selección de la cantidad a comprar.
-- Opción para agregar el producto al carrito de compras.
-  
-*5. Carrito de Compras*
-
-Vista del Carrito:
-- Lista de todos los productos añadidos al carrito.
-- Subtotal, impuestos, costos de envío.
-- Opción para modificar cantidades o eliminar productos.
-  
-Proceso de Compra:
-- Selección o adición de una dirección de envío.
-- Selección de método de pago (tarjeta de crédito o PayPal).
-- Confirmación del pedido.
-  
-*6. Seguimiento del Pedido*
-
-Estado del Pedido:
-- Pendiente: Pedido recibido y en proceso de preparación.
-- Enviado: Pedido enviado y en camino.
-- Entregado: Pedido entregado al cliente.
-  
-Historial de Pedidos:
-- Listado de pedidos anteriores con opción para repetir compra.
-  
-*7. Perfil del Usuario*
-
-Información Personal:
-- Datos de Usuario: Nombre, correo electrónico, teléfono.
-- Direcciones de envío
-- Métodos de Pago
-  
-*8. Notificaciones y Promociones*
-
-- Alertas sobre descuentos y promociones.
-- Notificaciones sobre el estado del pedido.
-
-*9. Centro de Ayuda*
-
-- Respuestas a preguntas frecuentes.
-- Contacto con Soporte en Chat en vivo, correo electrónico y número de teléfono.
-
-Ejemplos de uso:
-
-1. Abres la aplicación y te registras con tu correo.
-2. Navegas a la categoría de "Ropa para Perros".
-3. Filtras por tamaño y añades un abrigo al carrito.
-4. Vas al carrito, seleccionas tu dirección de envío y método de pago.
-5. Confirmas el pedido y recibes notificaciones sobre el estado del mismo.
-
+AppPetCare es una aplicación dedicada al cuidado de perros y gatos que permite al usuario comprar en línea alimentos, juguetes, ropa, accesorios y productos de salud para su mascota. Incluye funciones de registro e inicio de sesión. Su menú de navegación facilita el acceso a categorías de productos, historial y estado de pedidos, perfil de usuario con opciones de dirección y formas de pago, notificaciones de ofertas y promociones, una sección de preguntas frecuentes y soporte mediante chat. Brinda un catálogo con filtros de busqueda, descripciones de los productos con opciones de compra y seguimiento de pedidos hasta la entrega.
 
 ## Modelo Relacional
 - Adjuntar modelo
@@ -210,5 +122,93 @@ Un usuario puede tener múltiples métodos de pago registrados (1:N).
 
 ## Desarrollo de propuesta
 - Escribir sobre la solución a realizar.
+Nuestra aplicación tendrá las siguientes partes: 
+
+*1. Pantalla de Inicio y Registro*
+
+- Bienvenida y un breve tutorial sobre cómo usar la aplicación.
+- Registro con correo electrónico y número de teléfono.
+- Inicio de sesión con credenciales de usuario existentes.
+- Recuperación de la contraseña en caso de olvido.
+  
+*2. Menú de Navegación*
+
+- Inicio: Acceso a la pantalla principal y categorías de productos.
+- Productos: Listado completo de productos para perros y gatos.
+- Pedidos: Historial de pedidos y estado actual de los pedidos.
+- Perfil: Información personal del usuario, direcciones de envío y métodos de pago.
+- Notificaciones: Alertas sobre ofertas, promociones y actualizaciones de pedidos.
+- Chat: Acceso a soporte al cliente y preguntas sobre en.
+  
+*3. Catálogo de Productos*
+
+Categorías:
+- Alimentos: Subcategorías para perros y gatos (Pepas, snacks, suplementos).
+- Juguetes: Diversos tipos de juguetes clasificados por tamaño y tipo de mascota.
+- Ropa y Accesorios: Ropa para diferentes tamaños, collares y correas.
+- Salud y Cuidado: Productos de higiene, vitaminas y productos para el cuidado dental.
+  
+Filtros y Búsqueda:
+- Filtros avanzados por tamaño, precio, marca y color.
+- Barra de búsqueda para encontrar productos específicos rápidamente.
+  
+*4. Detalles del Producto*
+
+- Galería de imágenes del producto.
+- Detalles sobre el producto, materiales, instrucciones de uso.
+- Opciones de tamaños y colores.
+- Información sobre el precio y posibles descuentos.
+- Opiniones de otros usuarios y calificación promedio.
+  
+Añadir al Carrito:
+- Selección de la cantidad a comprar.
+- Opción para agregar el producto al carrito de compras.
+  
+*5. Carrito de Compras*
+
+Vista del Carrito:
+- Lista de todos los productos añadidos al carrito.
+- Subtotal, impuestos, costos de envío.
+- Opción para modificar cantidades o eliminar productos.
+  
+Proceso de Compra:
+- Selección o adición de una dirección de envío.
+- Selección de método de pago (tarjeta de crédito o PayPal).
+- Confirmación del pedido.
+  
+*6. Seguimiento del Pedido*
+
+Estado del Pedido:
+- Pendiente: Pedido recibido y en proceso de preparación.
+- Enviado: Pedido enviado y en camino.
+- Entregado: Pedido entregado al cliente.
+  
+Historial de Pedidos:
+- Listado de pedidos anteriores con opción para repetir compra.
+  
+*7. Perfil del Usuario*
+
+Información Personal:
+- Datos de Usuario: Nombre, correo electrónico, teléfono.
+- Direcciones de envío
+- Métodos de Pago
+  
+*8. Notificaciones y Promociones*
+
+- Alertas sobre descuentos y promociones.
+- Notificaciones sobre el estado del pedido.
+
+*9. Centro de Ayuda*
+
+- Respuestas a preguntas frecuentes.
+- Contacto con Soporte en Chat en vivo, correo electrónico y número de teléfono.
+
+Ejemplos de uso:
+
+1. Abres la aplicación y te registras con tu correo.
+2. Navegas a la categoría de "Ropa para Perros".
+3. Filtras por tamaño y añades un abrigo al carrito.
+4. Vas al carrito, seleccionas tu dirección de envío y método de pago.
+5. Confirmas el pedido y recibes notificaciones sobre el estado del mismo.
 
 
