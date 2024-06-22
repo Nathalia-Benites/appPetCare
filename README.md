@@ -1,5 +1,6 @@
 # AppPetCare
 Escribir sobre el contexto de su solución
+
 AppPetCare es una aplicación especializada en alimentos, juguetes, ropa y accesorios y productos para el cuidado de perros y gatos. Tendrá las siguientes partes: 
 
 *1. Pantalla de Inicio y Registro*
