@@ -9,10 +9,10 @@ AppPetCare es una aplicación dedicada al cuidado de perros y gatos que permite 
 *Usuarios (Usuarios)*
 
 - usuario_id (PK)
-- correo_electronico
+- correo 
 - contraseña
 - nombre
-- telefono
+- telfono
 - fecha_creacion
 
 *Direcciones (Direcciones)* 
@@ -119,6 +119,131 @@ Un usuario puede recibir múltiples notificaciones (1:N).
 Un usuario puede enviar múltiples mensajes de chat (1:N).
 Un usuario puede tener múltiples métodos de pago registrados (1:N).
 
+Script SQL
+-- Tabla Usuarios
+CREATE TABLE Usuarios (
+    usuario_id INT PRIMARY KEY AUTO_INCREMENT,
+    correo_electronico VARCHAR(100) NOT NULL,
+    contraseña VARCHAR(100) NOT NULL,
+    nombre VARCHAR(100) NOT NULL,
+    telefono VARCHAR(20),
+    fecha_creacion DATE NOT NULL
+);
+
+-- Tabla Direcciones
+CREATE TABLE Direcciones (
+    direccion_id INT PRIMARY KEY AUTO_INCREMENT,
+    usuario_id INT,
+    direccion VARCHAR(255) NOT NULL,
+    ciudad VARCHAR(100) NOT NULL,
+    estado VARCHAR(100) NOT NULL,
+    codigo_postal VARCHAR(20) NOT NULL,
+    pais VARCHAR(100) NOT NULL,
+    FOREIGN KEY (usuario_id) REFERENCES Usuarios(usuario_id)
+);
+
+-- Tabla CategoriasProductos
+CREATE TABLE CategoriasProductos (
+    categoria_id INT PRIMARY KEY AUTO_INCREMENT,
+    nombre_categoria VARCHAR(100) NOT NULL
+);
+
+-- Tabla Productos
+CREATE TABLE Productos (
+    producto_id INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(255) NOT NULL,
+    descripcion TEXT,
+    precio DECIMAL(10, 2) NOT NULL,
+    stock INT NOT NULL,
+    categoria_id INT,
+    talla VARCHAR(50),
+    color VARCHAR(50),
+    FOREIGN KEY (categoria_id) REFERENCES CategoriasProductos(categoria_id)
+);
+
+-- Tabla CarritosCompras
+CREATE TABLE CarritosCompras (
+    carrito_id INT PRIMARY KEY AUTO_INCREMENT,
+    usuario_id INT UNIQUE,
+    FOREIGN KEY (usuario_id) REFERENCES Usuarios(usuario_id)
+);
+
+-- Tabla ProductosCarrito
+CREATE TABLE ProductosCarrito (
+    producto_carrito_id INT PRIMARY KEY AUTO_INCREMENT,
+    carrito_id INT,
+    producto_id INT,
+    cantidad INT NOT NULL,
+    FOREIGN KEY (carrito_id) REFERENCES CarritosCompras(carrito_id),
+    FOREIGN KEY (producto_id) REFERENCES Productos(producto_id)
+);
+
+-- Tabla Pedidos
+CREATE TABLE Pedidos (
+    pedido_id INT PRIMARY KEY AUTO_INCREMENT,
+    usuario_id INT,
+    fecha_pedido DATE NOT NULL,
+    estado VARCHAR(50) NOT NULL,
+    monto_total DECIMAL(10, 2) NOT NULL,
+    direccion_id INT,
+    metodo_pago VARCHAR(50),
+    FOREIGN KEY (usuario_id) REFERENCES Usuarios(usuario_id),
+    FOREIGN KEY (direccion_id) REFERENCES Direcciones(direccion_id)
+);
+
+-- Tabla DetallesPedido
+CREATE TABLE DetallesPedido (
+    detalle_pedido_id INT PRIMARY KEY AUTO_INCREMENT,
+    pedido_id INT,
+    producto_id INT,
+    cantidad INT NOT NULL,
+    precio_unitario DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (pedido_id) REFERENCES Pedidos(pedido_id),
+    FOREIGN KEY (producto_id) REFERENCES Productos(producto_id)
+);
+
+-- Tabla OpinionesProductos
+CREATE TABLE OpinionesProductos (
+    opinion_id INT PRIMARY KEY AUTO_INCREMENT,
+    producto_id INT,
+    usuario_id INT,
+    calificacion INT NOT NULL,
+    texto_opinion TEXT,
+    fecha_opinion DATE NOT NULL,
+    FOREIGN KEY (producto_id) REFERENCES Productos(producto_id),
+    FOREIGN KEY (usuario_id) REFERENCES Usuarios(usuario_id)
+);
+
+-- Tabla Notificaciones
+CREATE TABLE Notificaciones (
+    notificacion_id INT PRIMARY KEY AUTO_INCREMENT,
+    usuario_id INT,
+    tipo VARCHAR(50) NOT NULL,
+    mensaje TEXT NOT NULL,
+    estado VARCHAR(50) NOT NULL,
+    fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (usuario_id) REFERENCES Usuarios(usuario_id)
+);
+
+-- Tabla MensajesChat
+CREATE TABLE MensajesChat (
+    mensaje_id INT PRIMARY KEY AUTO_INCREMENT,
+    usuario_id INT,
+    mensaje TEXT NOT NULL,
+    fecha_envio TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (usuario_id) REFERENCES Usuarios(usuario_id)
+);
+
+-- Tabla MetodosPago
+CREATE TABLE MetodosPago (
+    metodo_pago_id INT PRIMARY KEY AUTO_INCREMENT,
+    usuario_id INT,
+    numero_tarjeta VARCHAR(20) NOT NULL,
+    titular_tarjeta VARCHAR(100) NOT NULL,
+    fecha_expiracion DATE NOT NULL,
+    cvv VARCHAR(10) NOT NULL,
+    FOREIGN KEY (usuario_id) REFERENCES Usuarios(usuario_id)
+);
 
 ## Desarrollo de propuesta
 - Escribir sobre la solución a realizar.
@@ -204,8 +329,7 @@ Información Personal:
 - Respuestas a preguntas frecuentes.
 - Contacto con Soporte en Chat en vivo, correo electrónico y número de teléfono.
 
-Ejemplos de uso:
-
+Cómo usarías la apliacación:
 1. Abres la aplicación y te registras con tu correo.
 2. Navegas a la categoría de "Ropa para Perros".
 3. Filtras por tamaño y añades un abrigo al carrito.
