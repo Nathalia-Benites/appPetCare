@@ -1,7 +1,7 @@
 # AppPetCare
 Escribir sobre el contexto de su solución.
 
-AppPetCare es una iniciativa orientada a la creación de una plataforma de venta de productos para el cuidado de mascotas domésticas, especificamente perros y gatos. 
+AppPetCare es una iniciativa orientada a la creación de una plataforma dedicada a la venta de productos para el cuidado de mascotas domésticas, especificamente perros y gatos. 
 
 ## Modelo Relacional
 - Adjuntar modelo
@@ -121,11 +121,7 @@ Un usuario puede tener múltiples métodos de pago registrados (1:N).
 
 *SCRIPT SQL*
 
-![image](https://github.com/Nathalia-Benites/appPetCare/assets/167949641/d20f9920-1824-4ffd-85ec-8c76f4e1b4c2)
-![image](https://github.com/Nathalia-Benites/appPetCare/assets/167949641/cfedab2b-eee1-47c0-8e29-0f252a98d2b5)
-![image](https://github.com/Nathalia-Benites/appPetCare/assets/167949641/8765e0b5-2f18-4ba7-9f74-3940688be18f)
-![image](https://github.com/Nathalia-Benites/appPetCare/assets/167949641/1a890835-9be3-4c2d-ac56-7e489f9626c8)
-![image](https://github.com/Nathalia-Benites/appPetCare/assets/167949641/558131e0-d16d-4279-81c9-1e210573a2d7)
+[Modelo Script]()
 
 
 
