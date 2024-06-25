@@ -3,6 +3,13 @@ Escribir sobre el contexto de su solución.
 
 AppPetCare es una iniciativa orientada a la creación de una plataforma dedicada a la venta de productos para el cuidado de mascotas domésticas, especificamente perros y gatos. 
 
+---
+***Categorías:***
+- Alimentos: Subcategorías para perros y gatos (Pepas, snacks, suplementos).
+- Juguetes: Diversos tipos de juguetes clasificados por tamaño y tipo de mascota.
+- Ropa y Accesorios: Ropa para diferentes tamaños, collares y correas.
+- Salud y Cuidado: Productos de higiene, vitaminas y productos para el cuidado dental.
+  
 ## Modelo Relacional
 - Adjuntar modelo
   
@@ -121,7 +128,7 @@ Un usuario puede tener múltiples métodos de pago registrados (1:N).
 
 *SCRIPT SQL*
 
-[Modelo Script]()
+[Modelo Script](https://github.com/Nathalia-Benites/appPetCare/blob/main/Modelo%20relacional.sql)
 
 
 
@@ -130,9 +137,7 @@ Un usuario puede tener múltiples métodos de pago registrados (1:N).
 
 Se va a desarrollar la aplicación de la siguiente manera: 
 
-*1. Pantalla de Inicio y Registro*
-
-- Recibir a los usuarios que abran la aplicación por primera vez, con un mensaje de bienvenida y se presentará un breve tutorial interactivo que guíen a los usuarios sobre cómo navegar y utilizar las características clave de la aplicación.
+*1. Pantalla de Inicio y Registro:* Cuando los usuarios que abran la aplicación por primera vez, con un mensaje de bienvenida y se presentará un breve tutorial interactivo que guíen a los usuarios sobre cómo navegar y utilizar las características clave de la aplicación.
 - Implementar un formulario de registro que solicite al usuario su correo electrónico y número de teléfono. Validar estos datos.
 - Permitir a los usuarios iniciar sesión con sus credenciales existentes (correo electrónico y contraseña).
 - Implementar un proceso seguro para que los usuarios puedan restablecer su contraseña en caso de olvido, utilizando un enlace enviado por correo electrónico o un código de verificación SMS.
