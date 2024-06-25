@@ -5,11 +5,11 @@ AppPetCare es una iniciativa orientada a la creación de una plataforma dedicada
 
 ---
 ***Categorías:***
-- Alimentos: Subcategorías para perros y gatos (Pepas, snacks, suplementos).
+- Alimentos: Pepas, snacks y suplementos.
 - Juguetes: Diversos tipos de juguetes clasificados por tamaño y tipo de mascota.
 - Ropa y Accesorios: Ropa para diferentes tamaños, collares y correas.
 - Salud y Cuidado: Productos de higiene, vitaminas y productos para el cuidado dental.
-  
+---
 ## Modelo Relacional
 - Adjuntar modelo
   
@@ -135,84 +135,12 @@ Un usuario puede tener múltiples métodos de pago registrados (1:N).
 ## Desarrollo de propuesta
 - Escribir sobre la solución a realizar.
 
-Se va a desarrollar la aplicación de la siguiente manera: 
+Para esta propuesta se ha considerado los suguientes aspectos que se automatizará:
 
-*1. Pantalla de Inicio y Registro:* Cuando los usuarios que abran la aplicación por primera vez, con un mensaje de bienvenida y se presentará un breve tutorial interactivo que guíen a los usuarios sobre cómo navegar y utilizar las características clave de la aplicación.
-- Implementar un formulario de registro que solicite al usuario su correo electrónico y número de teléfono. Validar estos datos.
-- Permitir a los usuarios iniciar sesión con sus credenciales existentes (correo electrónico y contraseña).
-- Implementar un proceso seguro para que los usuarios puedan restablecer su contraseña en caso de olvido, utilizando un enlace enviado por correo electrónico o un código de verificación SMS.
-  
-*2. Menú de Navegación*
+*- Registro de usuarios:* Sistema de registro que solicite al usuario su correo electrónico y número de teléfono. Y un proceso seguro para que los usuarios puedan restablecer su contraseña en caso de olvido, utilizando un enlace enviado por correo electrónico o un código de verificación SMS.
+*- Gestión de pedidos:* Módulo para la realización, seguimiento y gestión de pedidos, incluyendo opciones de entrega y retiro en tienda.
 
-- Inicio: Dirigir a los usuarios a la pantalla principal de la aplicación donde podrán acceder a todas las funcionalidades principales y categorías de productos.
-- Productos: Listado completo de todos los productos disponibles para perros y gatos, organizados por categorías.
-- Pedidos: Acceso al historial de pedidos pasados y ver el estado actual de los pedidos pendientes.
-- Perfil: Información personal del usuario, direcciones de envío guardadas y métodos de pago configurados.
-- Notificaciones: Alertas sobre ofertas, promociones y actualizaciones importantes relacionadas con los pedidos.
-- Chat: Integrar un sistema de soporte al cliente en tiempo real donde los usuarios puedan realizar consultas y recibir asistencia directa.
-  
-*3. Catálogo de Productos*
 
-Categorías:
-- Alimentos: Subcategorías para perros y gatos (Pepas, snacks, suplementos).
-- Juguetes: Diversos tipos de juguetes clasificados por tamaño y tipo de mascota.
-- Ropa y Accesorios: Ropa para diferentes tamaños, collares y correas.
-- Salud y Cuidado: Productos de higiene, vitaminas y productos para el cuidado dental.
-  
-Filtros y Búsqueda:
-- Filtros avanzados por tamaño, precio, marca y color.
-- Barra de búsqueda para encontrar productos específicos rápidamente.
-  
-*4. Detalles del Producto*
-
-- Galería de imágenes del producto.
-- Detalles sobre el producto, materiales, instrucciones de uso.
-- Opciones de tamaños y colores.
-- Información sobre el precio y posibles descuentos.
-- Opiniones de otros usuarios y calificación promedio.
-  
-Añadir al Carrito:
-- Selección de la cantidad a comprar.
-- Opción para agregar el producto al carrito de compras.
-  
-*5. Carrito de Compras*
-
-Vista del Carrito:
-- Lista de todos los productos añadidos al carrito.
-- Subtotal, impuestos, costos de envío.
-- Opción para modificar cantidades o eliminar productos.
-  
-Proceso de Compra:
-- Selección o adición de una dirección de envío.
-- Selección de método de pago (tarjeta de crédito o PayPal).
-- Confirmación del pedido.
-  
-*6. Seguimiento del Pedido*
-
-Estado del Pedido:
-- Pendiente: Pedido recibido y en proceso de preparación.
-- Enviado: Pedido enviado y en camino.
-- Entregado: Pedido entregado al cliente.
-  
-Historial de Pedidos:
-- Listado de pedidos anteriores con opción para repetir compra.
-  
-*7. Perfil del Usuario*
-
-Información Personal:
-- Datos de Usuario: Nombre, correo electrónico, teléfono.
-- Direcciones de envío.
-- Métodos de pago.
-  
-*8. Notificaciones y Promociones*
-
-- Alertas sobre descuentos y promociones.
-- Notificaciones sobre el estado del pedido.
-
-*9. Centro de Ayuda*
-
-- Respuestas a preguntas frecuentes.
-- Contacto con Soporte en Chat en vivo, correo electrónico y número de teléfono.
 
 Cómo usarías la aplicación:
 1. Abres la aplicación y te registras con tu correo.
