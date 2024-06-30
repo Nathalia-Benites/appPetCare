@@ -141,7 +141,6 @@ Para esta propuesta se ha considerado los suguientes aspectos que se automatizar
 *- Gestión de pedidos:* Módulo para la realización, seguimiento y gestión de pedidos, incluyendo opciones de entrega y retiro en tienda.
 
 
-
 Cómo usarías la aplicación:
 1. Abres la aplicación y te registras con tu correo.
 2. Navegas a la categoría de "Ropa para Perros".
