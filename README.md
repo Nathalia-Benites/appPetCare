@@ -1,18 +1,18 @@
 # AppPetCare
-AppPetCare es una iniciativa orientada a la creación de una plataforma dedicada a la venta de productos para el cuidado de mascotas domésticas, específicamente perros y gatos, facilitando al usuario la adquisición de estos y brindándole un servicio al cliente excepcional.
+A la hora de cuidar a nuestras mascotas son varios los aspectos que debemos tener en cuenta como alimentación, salud, baños y juegos. Pero tenemos a la tecnología como aliada para suministrar servicios que garanticen la calidad en los insumos. Es el caso de AppPetCare, una iniciativa orientada a la creación de una plataforma dedicada a la venta de productos para el cuidado de mascotas domésticas, específicamente perros y gatos, facilitando al usuario su adquisición y brindándole un servicio al cliente excepcional. Esta plataforma es una herramienta útil para gestionar las necesidades de las mascotas, porque ofrece una variedad de productos desde alimentos hasta juguetes. 
 
-> Tiene un menú de navegación que permite acceder rápidamente a la pantalla principal, categorías de productos, historial y estado de pedidos, perfil de usuario, notificaciones y soporte. AppPetCare mantiene a los usuarios informados sobre promociones, ofertas y actualizaciones de pedidos a través de notificaciones.
+> La aplicación es un quick commerce, es decir, una nueva modalidad de comercio online en la que los vendedores entregan los pedidos a los usuarios en un reducido margen de tiempo.
 
 ***Categorías:***
 
 - **Alimentos:** Pepas, snacks y suplementos.
 - **Juguetes:** Diversos clasificados por tamaño y tipo de mascota.
-- **Ropa y Accesorios:** Ropa para diferentes tamaños, collares, correas, camas, casas.
-- **Salud y Cuidado:** Productos de higiene, vitaminas, pasta dental, cepillos, champús, cremas.
+- **Ropa y Accesorios:** Ropa para diferentes tamaños, collares, correas, camas, casas, platos.
+- **Salud y Cuidado:** Productos de higiene, vitaminas, pipetas, pastillas, pasta dental, cepillos, champús, cremas, arenas.
  
 ---
 ## Modelo Relacional
-![image](https://github.com/Nathalia-Benites/appPetCare/assets/167949641/e4c25336-8cb2-4e48-ae99-9fd2b3d2b5dd)
+![modeloRe](https://github.com/Nathalia-Benites/appPetCare/assets/167949641/ced73d1f-757e-4c8a-97bf-b1389eccb8ea)
 
 
 ____
