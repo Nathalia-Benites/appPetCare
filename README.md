@@ -1,9 +1,8 @@
 # AppPetCare
 AppPetCare es una iniciativa orientada a la creación de una plataforma dedicada a la venta de productos para el cuidado de mascotas domésticas, específicamente perros y gatos, facilitando al usuario la adquisición de estos y brindándole un servicio al cliente excepcional.
 
-Tiene un menú de navegación que permite acceder rápidamente a la pantalla principal, categorías de productos, historial y estado de pedidos, perfil de usuario, notificaciones y soporte. AppPetCare mantiene a los usuarios informados sobre promociones, ofertas y actualizaciones de pedidos a través de notificaciones. 
+> Tiene un menú de navegación que permite acceder rápidamente a la pantalla principal, categorías de productos, historial y estado de pedidos, perfil de usuario, notificaciones y soporte. AppPetCare mantiene a los usuarios informados sobre promociones, ofertas y actualizaciones de pedidos a través de notificaciones.
 
----
 ***Categorías:***
 
 - **Alimentos:** Pepas, snacks y suplementos.
@@ -19,6 +18,7 @@ ____
 
 [Modelo Script](https://github.com/Nathalia-Benites/appPetCare/blob/main/Modelo%20relacional.sql)
 
+-----
 ***Tablas Principales:***
 
 |Tabla	| Descripción|
@@ -36,7 +36,7 @@ ____
 |MensajesChat |Gestiona los mensajes enviados por los usuarios a través del sistema de soporte al cliente.|
 |MétodosPago| Almacena la información de los métodos de pago asociados a cada usuario, como números de tarjeta y detalles de vencimiento.|
 
-
+------
 ## Desarrollo de propuesta
 Para esta propuesta se ha considerado los suguientes aspectos que se automatizará:
 
