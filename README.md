@@ -19,6 +19,7 @@ AppPetCare es una iniciativa orientada a la creación de una plataforma dedicada
 ***Tablas Principales:***
 
 |Tabla	| Descripción
+------------------------
 | Usuarios	| Almacena información de los usuarios registrados, incluyendo nombre, correo electrónico, número de teléfono y datos de autenticación.
 | Productos	Contiene detalles de todos los productos disponibles, como nombre, descripción, categoría, precio, tamaño, color y disponibilidad.
 Pedidos	Registra cada pedido realizado por los usuarios, incluyendo detalles como fecha, estado (pendiente, enviado, entregado), productos asociados y dirección de envío.
