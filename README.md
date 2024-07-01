@@ -7,8 +7,8 @@ AppPetCare es una iniciativa orientada a la creación de una plataforma dedicada
 
 - **Alimentos:** Pepas, snacks y suplementos.
 - **Juguetes:** Diversos clasificados por tamaño y tipo de mascota.
-- **Ropa y Accesorios:** Ropa para diferentes tamaños, collares, correas, camas.
-- **Salud y Cuidado:** Productos de higiene, vitaminas y productos para el cuidado dental.
+- **Ropa y Accesorios:** Ropa para diferentes tamaños, collares, correas, camas, casas.
+- **Salud y Cuidado:** Productos de higiene, vitaminas, pasta dental, cepillos, champús, cremas.
  
 ---
 ## Modelo Relacional
