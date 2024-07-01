@@ -18,15 +18,20 @@ AppPetCare es una iniciativa orientada a la creación de una plataforma dedicada
 
 ***Tablas Principales:***
 
-|Tabla	| Descripción
--       -        - 
-| Usuarios	| Almacena información de los usuarios registrados, incluyendo nombre, correo electrónico, número de teléfono y datos de autenticación.
-| Productos	Contiene detalles de todos los productos disponibles, como nombre, descripción, categoría, precio, tamaño, color y disponibilidad.
-Pedidos	Registra cada pedido realizado por los usuarios, incluyendo detalles como fecha, estado (pendiente, enviado, entregado), productos asociados y dirección de envío.
-Direcciones	Gestiona las direcciones de envío de los usuarios para cada pedido, incluyendo nombre del destinatario, dirección completa y datos de contacto.
-Métodos de Pago	Almacena los métodos de pago asociados a cada usuario, como tarjetas de crédito, PayPal u otros métodos aceptados.
-Reseñas y Valoraciones	Guarda las opiniones y calificaciones de los usuarios sobre los productos, junto con comentarios opcionales.
-Configuraciones de Usuario	Administra las preferencias individuales de notificaciones y configuraciones de privacidad para cada usuario.
+|Tabla	| Descripción|
+|-------|-------------|
+| Usuarios |Almacena información básica de los usuarios que incluye nombre, correo electrónico, contraseña, teléfono y fecha de creación.|
+| Direcciones | Permite a cada usuario gestionar múltiples direcciones de envío asociadas a su cuenta.|
+| CategoriasProductos| Define las diferentes categorías bajo las cuales se clasifican los productos.|
+|Productos |Contiene detalles específicos de cada producto como nombre, descripción, precio, stock, tamaño, color y la categoría a la que pertenece.|
+|CarritosCompras |Registra los carritos activos de cada usuario mientras navegan y agregan productos antes de realizar un pedido.|
+|ProductosCarrito |Relaciona los productos específicos que están en cada carrito de compras junto con la cantidad seleccionada por el usuario.|
+|Pedidos |Almacena información sobre los pedidos realizados por los usuarios, incluyendo detalles como fecha, estado, monto total, dirección de envío y método de pago.|
+|DetallesPedido |Guarda los productos específicos incluidos en cada pedido, junto con la cantidad y el precio en el momento de la compra.|
+|OpinionesProductos| Permite a los usuarios dejar opiniones y calificaciones sobre los productos que han comprado.|
+|Notificaciones| Registra las notificaciones enviadas a los usuarios, como alertas de pedidos, promociones u otros mensajes importantes.|
+|MensajesChat |Gestiona los mensajes enviados por los usuarios a través del sistema de soporte al cliente.|
+|MétodosPago| Almacena la información de los métodos de pago asociados a cada usuario, como números de tarjeta y detalles de vencimiento.|
 
 
 
