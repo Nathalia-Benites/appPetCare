@@ -36,6 +36,7 @@ ____
 |Notificaciones| Registra las notificaciones enviadas a los usuarios, como alertas de pedidos, promociones u otros mensajes importantes.|
 |MensajesChat |Gestiona los mensajes enviados por los usuarios a través del sistema de soporte al cliente.|
 |MétodosPago| Almacena la información de los métodos de pago asociados a cada usuario, como números de tarjeta y detalles de vencimiento.|
+|Mascota |Registra cada mascota asociada a un usuario en particular, proporcionando detalles como su nombre, especie, raza, fecha de nacimiento y una referencia al usuario que la posee.|
 
 ------
 ## Desarrollo de propuesta
