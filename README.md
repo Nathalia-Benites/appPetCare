@@ -12,7 +12,8 @@ AppPetCare es una iniciativa orientada a la creación de una plataforma dedicada
  
 ---
 ## Modelo Relacional
-![image](https://github.com/Nathalia-Benites/appPetCare/assets/167949641/baab40c1-d4dc-4170-960d-1dc1ee403253)
+![image](https://github.com/Nathalia-Benites/appPetCare/assets/167949641/e4c25336-8cb2-4e48-ae99-9fd2b3d2b5dd)
+
 
 ____
 **DESCARGAR SCRIPT SQL**
