@@ -1,6 +1,4 @@
 # AppPetCare
-Escribir sobre el contexto de su solución.
-
 AppPetCare es una iniciativa orientada a la creación de una plataforma dedicada a la venta de productos para el cuidado de mascotas domésticas, especificamente perros y gatos. Tiene un menú de navegación que permite acceder rápidamente a la pantalla principal, categorías de productos, historial y estado de pedidos, perfil de usuario, notificaciones y soporte al cliente. AppPetCare mantiene a los usuarios informados sobre promociones, ofertas y actualizaciones de pedidos a través de notificaciones. 
 
 ---
@@ -18,11 +16,20 @@ AppPetCare es una iniciativa orientada a la creación de una plataforma dedicada
 
 [Modelo Script](https://github.com/Nathalia-Benites/appPetCare/blob/main/Modelo%20relacional.sql)
 
+***Tablas Principales:***
+
+|Tabla	| Descripción
+| Usuarios	| Almacena información de los usuarios registrados, incluyendo nombre, correo electrónico, número de teléfono y datos de autenticación.
+| Productos	Contiene detalles de todos los productos disponibles, como nombre, descripción, categoría, precio, tamaño, color y disponibilidad.
+Pedidos	Registra cada pedido realizado por los usuarios, incluyendo detalles como fecha, estado (pendiente, enviado, entregado), productos asociados y dirección de envío.
+Direcciones	Gestiona las direcciones de envío de los usuarios para cada pedido, incluyendo nombre del destinatario, dirección completa y datos de contacto.
+Métodos de Pago	Almacena los métodos de pago asociados a cada usuario, como tarjetas de crédito, PayPal u otros métodos aceptados.
+Reseñas y Valoraciones	Guarda las opiniones y calificaciones de los usuarios sobre los productos, junto con comentarios opcionales.
+Configuraciones de Usuario	Administra las preferencias individuales de notificaciones y configuraciones de privacidad para cada usuario.
+
 
 
 ## Desarrollo de propuesta
-Escribir sobre la solución a realizar.
-
 Para esta propuesta se ha considerado los suguientes aspectos que se automatizará:
 
 - Registro de usuarios: Sistema de registro y autenticación mediante correo electrónico y número de teléfono para padres y usuarios interesados en productos para perros y gatos.
