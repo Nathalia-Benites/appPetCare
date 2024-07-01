@@ -50,6 +50,6 @@ Para esta propuesta se ha considerado los suguientes aspectos que se automatizar
   
 - Soporte y Atención al Cliente: Implementación de un sistema automatizado de soporte al cliente que incluye opciones como chat en vivo, correo electrónico y atención telefónica para una respuesta rápida a consultas y problemas.
 ----
-  ***Beneficios esperados:**
------
+  **Beneficios esperados:**
+-----------------------
 Se espera que AppPetCare transforme la manera en que los dueños de mascotas acceden y adquieren productos para sus mascotas. La aplicación busca ofrecer una experiencia de compra conveniente, permitiendo a los usuarios realizar pedidos desde cualquier lugar y en cualquier momento a través de una plataforma. Además, se espera que optimice la gestión de inventarios y pedidos mediante tecnologías avanzadas, lo que reducirá los tiempos de espera y mejorará la disponibilidad de productos. En términos de servicio al cliente, se espera proporcionar soporte rápido y personalizado, asegurando una experiencia de usuario satisfactoria y segura. 
