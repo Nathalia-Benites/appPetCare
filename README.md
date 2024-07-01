@@ -15,7 +15,7 @@ Tiene un menú de navegación que permite acceder rápidamente a la pantalla pri
 ![image](https://github.com/Nathalia-Benites/appPetCare/assets/167949641/baab40c1-d4dc-4170-960d-1dc1ee403253)
 
 ____
-**SCRIPT SQL**
+**DESCARGAR SCRIPT SQL**
 
 [Modelo Script](https://github.com/Nathalia-Benites/appPetCare/blob/main/Modelo%20relacional.sql)
 
@@ -35,7 +35,6 @@ ____
 |Notificaciones| Registra las notificaciones enviadas a los usuarios, como alertas de pedidos, promociones u otros mensajes importantes.|
 |MensajesChat |Gestiona los mensajes enviados por los usuarios a través del sistema de soporte al cliente.|
 |MétodosPago| Almacena la información de los métodos de pago asociados a cada usuario, como números de tarjeta y detalles de vencimiento.|
-
 
 
 ## Desarrollo de propuesta
