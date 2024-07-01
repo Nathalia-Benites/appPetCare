@@ -6,9 +6,13 @@ AppPetCare es una iniciativa orientada a la creación de una plataforma dedicada
 ***Categorías:***
 
 - **Alimentos:** Pepas, snacks y suplementos.
-- **Juguetes:** Diversos tipos de juguetes clasificados por tamaño y tipo de mascota.
-- **Ropa y Accesorios:** Ropa para diferentes tamaños, collares y correas.
+- **Juguetes:** Diversos clasificados por tamaño y tipo de mascota.
+- **Ropa y Accesorios:** Ropa para diferentes tamaños, collares, correas, camas.
 - **Salud y Cuidado:** Productos de higiene, vitaminas y productos para el cuidado dental.
+  
+![image](https://github.com/Nathalia-Benites/appPetCare/assets/167949641/69b4f64e-b4ae-498f-b156-78b2639fce5f)
+
+
 ---
 ## Modelo Relacional
 ![image](https://github.com/Nathalia-Benites/appPetCare/assets/167949641/baab40c1-d4dc-4170-960d-1dc1ee403253)
