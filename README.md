@@ -29,13 +29,9 @@ ____
 | Direcciones | Permite a cada usuario gestionar múltiples direcciones de envío asociadas a su cuenta.|
 | CategoriasProductos| Define las diferentes categorías bajo las cuales se clasifican los productos.|
 |Productos |Contiene detalles específicos de cada producto como nombre, descripción, precio, stock, tamaño, color y la categoría a la que pertenece.|
-|CarritosCompras |Registra los carritos activos de cada usuario mientras navegan y agregan productos antes de realizar un pedido.|
-|ProductosCarrito |Relaciona los productos específicos que están en cada carrito de compras junto con la cantidad seleccionada por el usuario.|
 |Pedidos |Almacena información sobre los pedidos realizados por los usuarios, incluyendo detalles como fecha, estado, monto total, dirección de envío y método de pago.|
-|DetallesPedido |Guarda los productos específicos incluidos en cada pedido, junto con la cantidad y el precio en el momento de la compra.|
+|DetallesPedido |Guarda los productos específicos incluidos en cada pedido, junto con la cantidad, el precio y el monto total.|
 |OpinionesProductos| Permite a los usuarios dejar opiniones y calificaciones sobre los productos que han comprado.|
-|Notificaciones| Registra las notificaciones enviadas a los usuarios, como alertas de pedidos, promociones u otros mensajes importantes.|
-|MensajesChat |Gestiona los mensajes enviados por los usuarios a través del sistema de soporte al cliente.|
 |MétodosPago| Almacena la información de los métodos de pago asociados a cada usuario, como números de tarjeta y detalles de vencimiento.|
 |Mascota |Registra cada mascota asociada a un usuario en particular, proporcionando detalles como su nombre, especie, raza, fecha de nacimiento y una referencia al usuario que la posee.|
 
