@@ -33,7 +33,7 @@ ____
 |DetallesPedido |Guarda los productos específicos incluidos en cada pedido, junto con la cantidad, el precio y el monto total.|
 |OpinionesProductos| Permite a los usuarios dejar opiniones y calificaciones sobre los productos que han comprado.|
 |MétodosPago| Almacena la información de los métodos de pago asociados a cada usuario, como números de tarjeta y detalles de vencimiento.|
-|Mascota |Registra cada mascota asociada a un usuario en particular, proporcionando detalles como su nombre, especie, raza, fecha de nacimiento y una referencia al usuario que la posee.|
+| Mascota |Registra cada mascota asociada a un usuario en particular, proporcionando detalles como su nombre, especie, raza, fecha de nacimiento y una referencia al usuario que la posee.|
 
 ------
 ## Desarrollo de propuesta
