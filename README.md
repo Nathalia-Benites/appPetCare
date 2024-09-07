@@ -29,9 +29,9 @@ ____
 | CategoriasProductos|	Define las diferentes categorías bajo las cuales se clasifican los productos, como juguetes, ropa, alimentos, y productos de higiene.|
 |Productos |Contiene detalles específicos de cada producto, como nombre, descripción, precio, stock disponible, tamaño, color, y la categoría a la que pertenece.|
 |Pedidos |Almacena la información de los pedidos realizados por los usuarios, incluyendo la fecha del pedido, estado (pendiente, enviado, entregado), monto total, dirección de envío, y el método de pago utilizado|
-|DetallesPedido |Guarda los productos específicos incluidos en cada pedido, junto con la cantidad solicitada, precio unitario, y el monto total del detalle de pedido.|
+|Detalles del Pedido |Guarda los productos específicos incluidos en cada pedido, junto con la cantidad solicitada, precio unitario, y el monto total del detalle de pedido.|
 |OpinionesProductos| Permite a los usuarios dejar opiniones y calificaciones sobre los productos comprados, con campos para la calificación (1-5 estrellas) y un comentario opcional.|
-|MétodosPago| Almacena la información de los métodos de pago asociados a cada usuario, como el número de tarjeta encriptado, fecha de vencimiento, y tipo de tarjeta (crédito/débito).|
+|Métodos de Pago| Almacena la información de los métodos de pago asociados a cada usuario, como el número de tarjeta encriptado, fecha de vencimiento, y tipo de tarjeta (crédito/débito).|
 | Mascota |Registra cada mascota asociada a un usuario específico, proporcionando detalles como nombre, especie, raza, fecha de nacimiento, y una referencia al usuario propietario.|
 
 ------
