@@ -37,7 +37,7 @@ ____
 
 ------
 ## Desarrollo de propuesta
-Para esta propuesta se ha considerado los suguientes aspectos que se automatizará:
+Para esta propuesta se ha considerado los siguientes aspectos que se automatizará:
 
 - **Registro de usuarios:** Sistema de registro y autenticación mediante correo electrónico y número de teléfono para padres y usuarios interesados en productos para perros y gatos.
   
