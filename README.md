@@ -1,7 +1,6 @@
 # AppPetCare
-A la hora de cuidar a nuestras mascotas son varios los aspectos que debemos tener en cuenta como alimentación, salud, baños y juegos. Pero tenemos a la tecnología como aliada para suministrar servicios que garanticen la calidad en los insumos. Es el caso de AppPetCare, una iniciativa orientada a la creación de una plataforma dedicada a la venta de productos para el cuidado de mascotas domésticas, específicamente perros y gatos, facilitando al usuario su adquisición y brindándole un servicio al cliente excepcional. Esta plataforma es una herramienta útil para gestionar las necesidades de las mascotas, porque ofrece una variedad de productos desde alimentos hasta juguetes. 
+A la hora de cuidar a nuestras mascotas debemos de considerar varios aspectos como alimentación, salud, baños y juegos. Pero tenemos a la tecnología como aliada para suministrar servicios que garanticen la calidad en los insumos. Es el caso de AppPetCare, es una iniciativa orientada a la creación de un programa dedicado a la venta de productos para el cuidado de mascotas domésticas, específicamente perros y gatos, facilitando al usuario su adquisición y brindándole un servicio al cliente excepcional. Este programa es una herramienta útil para gestionar las necesidades de las mascotas, porque ofrece una variedad de productos desde alimentos hasta juguetes. 
 
-> La aplicación es un quick commerce, es decir, una nueva modalidad de comercio online en la que los vendedores entregan los pedidos a los usuarios en un reducido margen de tiempo.
 
 ***Categorías:***
 
