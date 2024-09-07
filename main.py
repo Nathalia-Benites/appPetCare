@@ -13,11 +13,10 @@ def main():
             print("4. Mostrar Pedidos")
             print("5. Mostrar Usuarios")
             print("6. Mostrar Productos")
-            print("7. Eliminar Producto")  # Nueva opción añadida
-            print("8. Salir")
+            print("7. Salir")
 
             try:
-                opcion = int(input("Escoja una opción (1-8): \t"))
+                opcion = int(input("Escoja una opción (1-7): \t"))
             except ValueError:
                 print("Por favor, ingrese un número válido.")
                 continue
@@ -53,11 +52,6 @@ def main():
                 except Error as e:
                     print(e)
             elif opcion == 7:
-                try:
-                    app.eliminarProducto()
-                except Error as e:
-                    print(e)
-            elif opcion == 8:
                 print("Gracias por preferirnos. ¡Hasta luego!")
                 break
             else:
@@ -69,4 +63,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
