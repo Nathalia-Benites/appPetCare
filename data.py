@@ -146,22 +146,6 @@ class AppPetCare:
         except Error as e:
             print(f"Error de MySQL: {e}")
 
-    def eliminarProducto(self):
-        try:
-            producto_id = int(input("Ingrese el ID del producto que desea eliminar: "))
-
-            # Verificar si el producto existe antes de intentar eliminarlo
-            self.cursor.execute("SELECT * FROM PRODUCTO WHERE id_producto = %s", (producto_id,))
-            if self.cursor.fetchone():
-                # Eliminar el producto de la base de datos
-                self.cursor.execute("DELETE FROM PRODUCTO WHERE id_producto = %s", (producto_id,))
-                self.conn.commit()
-                print(f"Producto ID {producto_id} eliminado exitosamente.")
-            else:
-                print("Producto no encontrado en la base de datos.")
-        except Error as e:
-            print(f"Error de MySQL: {e}")
-
     def mostrarPedidos(self):
         try:
             self.cursor.execute("SELECT * FROM PEDIDO")
