@@ -1,187 +1,190 @@
-import mysql
-
 import mysql.connector
-from decimal import Decimal
-class Error(Exception):
-    pass
-class Cliente:
-    def __init__(self, id_cliente, nombre, direccion, telefono, ciudad):
-        self._id_cliente = id_cliente
-        self._nombre = nombre
-        self._direccion = direccion
-        self._telefono = telefono
-        self._ciudad = ciudad
-class Producto:
-    def __init__(self, id_producto, descripcion, precio):
-        self._id_producto = id_producto
-        self._descripcion = descripcion
-        self._precio = precio
-class Categoria:
-    def __init__(self, id_producto, descripcion, precio):
-        self._id_producto = id_producto
-        self._descripcion = descripcion
-        self._precio = precio
-class Venta:
-    def __init__(self, cantidad, id_cliente, id_producto):
-        self._id_venta = 0
-        self._cantidad = cantidad
-        self._id_cliente = id_cliente
-        self._id_producto = id_producto
-    def totalPagar(self, precio):
-        return precio * self._cantidad
-class App:
+from mysql.connector import Error
+from bcrypt import hashpw, gensalt
+from pymsgbox import password
+
+class AppPetCare:
     def __init__(self):
-        self._host = "localh"
-        self._user = "root"
-        self._password = ""
-        self._database = "petCare"
+        self.conectar()
+
     def conectar(self):
         try:
-            self._conn = mysql.connector.connect(
-                host=self._host,
-                user=self._user,
-                password=self._password,
-                database=self._database
+            self.conn = mysql.connector.connect(
+                host="localhost",
+                user="root",
+                password="",
+                database="petCare"
             )
-            if self._conn.is_connected():
-                self._cursor = self._conn.cursor()
-        except mysql.connector.Error as e:
-            raise Error(f"Error de conexión: {e}")
-    def cerrarConeccion(self):
-        if self._conn.is_connected() and self._conn:
-            self._conn.close()
-            self._cursor.close()
-    def registrarClientes(self):
+            if self.conn.is_connected():
+                self.cursor = self.conn.cursor()
+                print("Conexión establecida con la base de datos.")
+        except Error as e:
+            print(f"Error al conectar a MySQL: {e}")
+
+    def cerrarConexion(self):
+        if self.conn.is_connected():
+            self.cursor.close()
+            self.conn.close()
+            print("Conexión cerrada con la base de datos.")
+
+    def registrarUsuario(self):
         try:
-            id_cliente = int(input("Ingrese el código de identificación del cliente: "))
-            nombre = input("Ingrese sus nombres y apellidos: ")
-            direccion = input("Ingrese la dirección domiciliaria: ")
-            telefono = input("Ingrese el teléfono: ")
-            ciudad = input("Ingrese la ciudad de residencia: ")
-            query = """
-                INSERT INTO cliente (id_cliente, nombre, direccion, telefono, ciudad) 
-                VALUES (%s, %s, %s, %s, %s)
-            """
-            self._cursor.execute(query, (id_cliente, nombre, direccion, telefono, ciudad))
-            print("Registro guardado exitosamente")
-            self._conn.commit()
-        except ValueError as e:
-            raise Error(f"Error de valor: {e}")
-        except mysql.connector.Error as e:
-            raise Error(f"Error de MySQL: {e}")
-        except Exception as e:
-            raise Error(f"Ha ocurrido un error inesperado: {e}")
+            nombre = input("Ingrese el nombre del usuario: ")
+            direccion = input("Ingrese la dirección del usuario: ")
+            telefono = input("Ingrese el número de teléfono: ")
+            ciudad = input("Ingrese la ciudad: ")
+            correo = input("Ingrese el correo electrónico: ")
+            contrasena = input("Ingrese la contraseña: ")
+            hashed_password = hashpw(contrasena.encode(), gensalt())
+
+            query = "INSERT INTO CLIENTE (nombre, direccion, telefono, ciudad, correo, contrasena) VALUES (%s, %s, %s, %s, %s, %s)"
+            self.cursor.execute(query, (nombre, direccion, telefono, ciudad, correo, hashed_password))
+            self.conn.commit()
+            print("Usuario registrado exitosamente.")
+        except Error as e:
+            print(f"Error de MySQL: {e}")
+
     def registrarProducto(self):
         try:
-            id_producto = int(input("Ingrese el código del producto: "))
             descripcion = input("Ingrese la descripción del producto: ")
             precio = float(input("Ingrese el precio del producto: "))
-            query = """
-                INSERT INTO producto (id_producto, descripcion, precio) 
-                VALUES (%s, %s, %s)
-            """
-            self._cursor.execute(query, (id_producto, descripcion, precio))
-            print("Producto registrado exitosamente")
-            self._conn.commit()
-        except ValueError as e:
-            raise Error(f"Error de valor: {e}")
-        except mysql.connector.Error as e:
-            raise Error(f"Error de MySQL: {e}")
-        except Exception as e:
-            raise Error(f"Ha ocurrido un error inesperado: {e}")
-    def consultarCliente(self, id_cliente):
-        try:
-            query = "SELECT nombre FROM cliente WHERE id_cliente = %s"
-            self._cursor.execute(query, (id_cliente,))
-            resultado = self._cursor.fetchone()
-            if resultado:
-                return resultado[0]
-            return None
-        except mysql.connector.Error as e:
-            raise Error(f"Error de MySQL: {e}")
-    def consultarProducto(self, id_producto):
-        try:
-            query = "SELECT descripcion, precio FROM producto WHERE id_producto = %s"
-            self._cursor.execute(query, (id_producto,))
-            resultado = self._cursor.fetchone()
-            if resultado:
-                # Convertir el precio a float para evitar problemas de tipo
-                precio = float(resultado[1])
-                return Producto(id_producto, resultado[0], precio)
-            return None
-        except mysql.connector.Error as e:
-            raise Error(f"Error de MySQL: {e}")
-    def registrarVentaEnDB(self, venta):
-        try:
-            query = """
-                INSERT INTO venta (cantidad, id_cliente, id_producto) 
-                VALUES (%s, %s, %s)
-            """
-            self._cursor.execute(query, (venta._cantidad, venta._id_cliente, venta._id_producto))
-            self._conn.commit()
-            print("Venta registrada exitosamente")
-        except mysql.connector.Error as e:
-            raise Error(f"Error de MySQL al registrar la venta: {e}")
-    def registrarVenta(self):
-        try:
-            id_cliente = int(input("Ingrese el código del cliente: "))
-            cliente_nombre = self.consultarCliente(id_cliente)
-            if cliente_nombre is None:
-                print("Cliente no encontrado.")
-                if input("¿Desea registrar al cliente? (si / no): ").lower() == 'si':
-                    self.registrarClientes()
-                else:
-                    print("No se puede registrar la venta sin un cliente.")
-                    return
-            id_producto = int(input("Ingrese el código del producto: "))
-            producto = self.consultarProducto(id_producto)
-            if producto is None:
-                print("Producto no encontrado.")
-                if input("¿Desea registrar el producto? (si / no): ").lower() == 'si':
-                    self.registrarProducto()
-                else:
-                    print("No se puede registrar la venta sin un producto.")
-                    return
-            cantidad = int(input("Ingrese la cantidad: "))
-            venta = Venta(cantidad, id_cliente, id_producto)
-            subtotal = venta.totalPagar(producto._precio)
-            iva = subtotal * 0.15  # Supongamos que el IVA es del 15%
-            total = subtotal + iva
-            # Mostrar el detalle de la venta
-            print("\n\tDetalle de la Venta:")
-            print(f"Cliente: {cliente_nombre}")
-            print(f"Producto: {producto._descripcion}")
-            print(f"Cantidad: {cantidad}")
-            print(f"Precio Unitario: ${producto._precio:.2f}")
-            print(f"Subtotal: ${subtotal:.2f}")
-            print(f"IVA (15%): ${iva:.2f}")
-            print(f"Total a pagar: ${total:.2f}")
-            # Registrar la venta en la base de datos
-            self.registrarVentaEnDB(venta)
-        except ValueError as e:
-            raise Error(f"Error de valor: {e}")
-        except mysql.connector.Error as e:
-            raise Error(f"Error de MySQL: {e}")
-        except Exception as e:
-            raise Error(f"Ha ocurrido un error inesperado: {e}")
+            stock = int(input("Ingrese la cantidad en stock: "))
+            id_categoria = int(input("Ingrese el ID de la categoría del producto: "))
 
-    def consultarCompraPorCliente(self, id_cliente):
-        try:
-            query = """
-                SELECT nombre, descripcion, cantidad, subtotal, iva, total
-                FROM compra
-                WHERE idCliente = %s
-            """
-            self._cursor.execute(query, (id_cliente,))
-            resultados = self._cursor.fetchall()
+            query = "INSERT INTO PRODUCTO (descripcion, precio, id_categoria, stock) VALUES (%s, %s, %s, %s)"
+            self.cursor.execute(query, (descripcion, precio, id_categoria, stock))
+            self.conn.commit()
+            print("Producto registrado exitosamente.")
+        except Error as e:
+            print(f"Error de MySQL: {e}")
 
-            if resultados:
-                print(f"Compras realizadas por el cliente {id_cliente}:")
-                for row in resultados:
-                    nombre, descripcion, cantidad, subtotal, iva, total = row
-                    print(f"Nombre: {nombre}, Producto: {descripcion}, Cantidad: {cantidad}")
-                    print(f"Subtotal: ${float(subtotal):.2f}, IVA: ${float(iva):.2f}, Total: ${float(total):.2f}\n")
+    def realizarPedido(self):
+        try:
+            user_id = int(input("Ingrese el ID del usuario que realiza el pedido: "))
+            total = 0
+            pedido_productos = {}
+
+            while True:
+                print("\nOpciones:")
+                print("1. Agregar producto")
+                print("2. Eliminar producto")
+                print("3. Finalizar pedido")
+                opcion = input("Seleccione una opción (1/2/3): ")
+
+                if opcion == "1":
+                    producto_id = int(input("Ingrese el ID del producto que desea agregar al pedido: "))
+                    cantidad = int(input("Ingrese la cantidad del producto: "))
+
+                    # Consultar precio y stock del producto
+                    self.cursor.execute("SELECT descripcion, precio, stock FROM PRODUCTO WHERE id_producto = %s",
+                                        (producto_id,))
+                    resultado = self.cursor.fetchone()
+                    if resultado:
+                        descripcion, precio, stock = resultado
+                        if cantidad <= stock:
+                            if producto_id in pedido_productos:
+                                pedido_productos[producto_id]['cantidad'] += cantidad
+                            else:
+                                pedido_productos[producto_id] = {'descripcion': descripcion, 'cantidad': cantidad,
+                                                                 'precio': precio}
+                            total += precio * cantidad
+                            # Actualizar el stock
+                            self.cursor.execute("UPDATE PRODUCTO SET stock = stock - %s WHERE id_producto = %s",
+                                                (cantidad, producto_id))
+                        else:
+                            print(
+                                f"No hay suficiente stock para el producto ID {producto_id}. Stock disponible: {stock}.")
+                    else:
+                        print("Producto no encontrado.")
+
+                elif opcion == "2":
+                    producto_id = int(input("Ingrese el ID del producto que desea eliminar del pedido: "))
+                    if producto_id in pedido_productos:
+                        cantidad = pedido_productos[producto_id]['cantidad']
+                        precio = pedido_productos[producto_id]['precio']
+                        total -= precio * cantidad
+                        # Restaurar el stock
+                        self.cursor.execute("UPDATE PRODUCTO SET stock = stock + %s WHERE id_producto = %s",
+                                            (cantidad, producto_id))
+                        del pedido_productos[producto_id]
+                    else:
+                        print("Producto no encontrado en el pedido.")
+
+                elif opcion == "3":
+                    if pedido_productos:
+                        # Registrar pedido en la base de datos
+                        query = "INSERT INTO PEDIDO (id_cliente, fecha, total) VALUES (%s, CURDATE(), %s)"
+                        self.cursor.execute(query, (user_id, total))
+                        pedido_id = self.cursor.lastrowid
+
+                        # Registrar detalles del pedido
+                        for producto_id, detalles in pedido_productos.items():
+                            descripcion = detalles['descripcion']
+                            cantidad = detalles['cantidad']
+                            precio = detalles['precio']
+                            query = "INSERT INTO DETALLE_PEDIDO (id_pedido, id_producto, cantidad, precio) VALUES (%s, %s, %s, %s)"
+                            self.cursor.execute(query, (pedido_id, producto_id, cantidad, precio))
+
+                        self.conn.commit()
+
+                        # Mostrar resumen del pedido
+                        print(f"\nPedido realizado con éxito. Total a pagar: ${total:.2f}")
+                        print("Detalles del pedido:")
+                        for producto_id, detalles in pedido_productos.items():
+                            descripcion = detalles['descripcion']
+                            cantidad = detalles['cantidad']
+                            precio = detalles['precio']
+                            print(
+                                f"Producto ID: {producto_id}, Descripción: {descripcion}, Cantidad: {cantidad}, Precio unitario: ${precio:.2f}, Total: ${precio * cantidad:.2f}")
+                    else:
+                        print("No se han agregado productos al pedido.")
+                    break
+
+                else:
+                    print("Opción no válida. Por favor, seleccione una opción válida.")
+
+        except Error as e:
+            print(f"Error de MySQL: {e}")
+
+    def eliminarProducto(self):
+        try:
+            producto_id = int(input("Ingrese el ID del producto que desea eliminar: "))
+
+            # Verificar si el producto existe antes de intentar eliminarlo
+            self.cursor.execute("SELECT * FROM PRODUCTO WHERE id_producto = %s", (producto_id,))
+            if self.cursor.fetchone():
+                # Eliminar el producto de la base de datos
+                self.cursor.execute("DELETE FROM PRODUCTO WHERE id_producto = %s", (producto_id,))
+                self.conn.commit()
+                print(f"Producto ID {producto_id} eliminado exitosamente.")
             else:
-                print("No se encontraron compras para el cliente.")
-        except mysql.connector.Error as e:
-            raise Error(f"Error de MySQL: {e}")
+                print("Producto no encontrado en la base de datos.")
+        except Error as e:
+            print(f"Error de MySQL: {e}")
+
+    def mostrarPedidos(self):
+        try:
+            self.cursor.execute("SELECT * FROM PEDIDO")
+            pedidos = self.cursor.fetchall()
+            for pedido in pedidos:
+                print(f"Pedido ID: {pedido[0]}, Cliente ID: {pedido[1]}, Total: ${pedido[3]:.2f}, Fecha: {pedido[2]}")
+        except Error as e:
+            print(f"Error de MySQL: {e}")
+
+    def mostrarUsuarios(self):
+        try:
+            self.cursor.execute("SELECT * FROM CLIENTE")
+            usuarios = self.cursor.fetchall()
+            for usuario in usuarios:
+                print(f"Usuario ID: {usuario[0]}, Nombre: {usuario[1]}, Correo: {usuario[5]}, Teléfono: {usuario[3]}")
+        except Error as e:
+            print(f"Error de MySQL: {e}")
+
+    def mostrarProductos(self):
+        try:
+            self.cursor.execute("SELECT * FROM PRODUCTO")
+            productos = self.cursor.fetchall()
+            for producto in productos:
+                print(f"Producto ID: {producto[0]}, Descripción: {producto[1]}, Precio: ${producto[2]:.2f}, Stock: {producto[3]}, Categoría ID: {producto[4]}")
+        except Error as e:
+            print(f"Error de MySQL: {e}")
