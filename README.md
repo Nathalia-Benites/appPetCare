@@ -24,15 +24,15 @@ ____
 
 |Tabla	| Descripción|
 |-------|-------------|
-| Usuarios |Almacena información básica de los usuarios que incluye nombre, correo electrónico, contraseña, teléfono y fecha de creación.|
-| Direcciones | Permite a cada usuario gestionar múltiples direcciones de envío asociadas a su cuenta.|
-| CategoriasProductos| Define las diferentes categorías bajo las cuales se clasifican los productos.|
-|Productos |Contiene detalles específicos de cada producto como nombre, descripción, precio, stock, tamaño, color y la categoría a la que pertenece.|
-|Pedidos |Almacena información sobre los pedidos realizados por los usuarios, incluyendo detalles como fecha, estado, monto total, dirección de envío y método de pago.|
-|DetallesPedido |Guarda los productos específicos incluidos en cada pedido, junto con la cantidad, el precio y el monto total.|
-|OpinionesProductos| Permite a los usuarios dejar opiniones y calificaciones sobre los productos que han comprado.|
-|MétodosPago| Almacena la información de los métodos de pago asociados a cada usuario, como números de tarjeta y detalles de vencimiento.|
-| Mascota |Registra cada mascota asociada a un usuario en particular, proporcionando detalles como su nombre, especie, raza, fecha de nacimiento y una referencia al usuario que la posee.|
+| Usuarios |Almacena la información básica de los usuarios, incluyendo nombre, correo electrónico, contraseña encriptada, número de teléfono, y fecha de creación de la cuenta.|
+| Direcciones |Permite a los usuarios gestionar múltiples direcciones de envío asociadas a su cuenta, con campos como dirección completa, ciudad, estado, y código postal|
+| CategoriasProductos|	Define las diferentes categorías bajo las cuales se clasifican los productos, como juguetes, ropa, alimentos, y productos de higiene.|
+|Productos |Contiene detalles específicos de cada producto, como nombre, descripción, precio, stock disponible, tamaño, color, y la categoría a la que pertenece.|
+|Pedidos |Almacena la información de los pedidos realizados por los usuarios, incluyendo la fecha del pedido, estado (pendiente, enviado, entregado), monto total, dirección de envío, y el método de pago utilizado|
+|DetallesPedido |Guarda los productos específicos incluidos en cada pedido, junto con la cantidad solicitada, precio unitario, y el monto total del detalle de pedido.|
+|OpinionesProductos| Permite a los usuarios dejar opiniones y calificaciones sobre los productos comprados, con campos para la calificación (1-5 estrellas) y un comentario opcional.|
+|MétodosPago| Almacena la información de los métodos de pago asociados a cada usuario, como el número de tarjeta encriptado, fecha de vencimiento, y tipo de tarjeta (crédito/débito).|
+| Mascota |Registra cada mascota asociada a un usuario específico, proporcionando detalles como nombre, especie, raza, fecha de nacimiento, y una referencia al usuario propietario.|
 
 ------
 ## Desarrollo de propuesta
