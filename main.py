@@ -4,6 +4,7 @@ def main():
     app = AppPetCare()
     try:
         print("\t\t\tBienvenidos a su App PetCare")
+        print("\t\t\t¡Donde cuidamos de la salud de tu pequeño!")
 
         while True:
             print("\nMenú:")
