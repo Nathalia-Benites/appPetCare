@@ -53,6 +53,6 @@ Para esta propuesta se ha considerado los siguientes aspectos que se automatizar
   ***Beneficios esperados:***
 -----------------------
 Se espera que AppPetCare:
-- Transforme la manera en que los dueños de mascotas acceden y adquieren productos para sus mascotas. La aplicación busca ofrecer una experiencia de compra conveniente, permitiendo a los usuarios realizar pedidos desde cualquier lugar y en cualquier momento a través de una plataforma. 
+- Transforme la manera en que los dueños de mascotas acceden y adquieren productos para sus mascotas. La aplicación busca ofrecer una experiencia de compra conveniente. 
 - Optimice la gestión de inventarios y pedidos mediante tecnologías avanzadas, lo que reducirá los tiempos de espera y mejorará la disponibilidad de productos. 
 - Mejore el servicio al cliente proporcionando soporte rápido y personalizado, asegurando así una experiencia de usuario satisfactoria y segura.
