@@ -1,24 +1,30 @@
-from data import App, Error
+from data import AppPetCare, Error
+
 def main():
-    app = App()
+    app = AppPetCare()
     try:
-        app.conectar()
-        print("Bienvenidos a su App PetCare")
+        print("\t\t\tBienvenidos a su App PetCare")
+
         while True:
             print("\nMenú:")
-            print("1. Registro de Cliente")
-            print("2. Registro de Producto")
-            print("3. Registro de la Venta")
-            print("4. Buscar compras realizadas por un cliente")
-            print("5. Salir")
+            print("1. Registrar Usuario")
+            print("2. Registrar Producto")
+            print("3. Realizar Pedido")
+            print("4. Mostrar Pedidos")
+            print("5. Mostrar Usuarios")
+            print("6. Mostrar Productos")
+            print("7. Eliminar Producto")  # Nueva opción añadida
+            print("8. Salir")
+
             try:
-                opcion = int(input("Escoja una opción (1-5): \t"))
+                opcion = int(input("Escoja una opción (1-8): \t"))
             except ValueError:
                 print("Por favor, ingrese un número válido.")
                 continue
+
             if opcion == 1:
                 try:
-                    app.registrarClientes()
+                    app.registrarUsuario()
                 except Error as e:
                     print(e)
             elif opcion == 2:
@@ -28,25 +34,39 @@ def main():
                     print(e)
             elif opcion == 3:
                 try:
-                    app.registrarVenta()
+                    app.realizarPedido()
                 except Error as e:
                     print(e)
             elif opcion == 4:
                 try:
-                    id_cliente = int(input("Ingrese el código del cliente: "))
-                    app.buscarComprasPorCliente(id_cliente)
-                except ValueError:
-                    print("Por favor, ingrese un número válido.")
+                    app.mostrarPedidos()
                 except Error as e:
                     print(e)
             elif opcion == 5:
-                print("Gracias por preferirnos")
+                try:
+                    app.mostrarUsuarios()
+                except Error as e:
+                    print(e)
+            elif opcion == 6:
+                try:
+                    app.mostrarProductos()
+                except Error as e:
+                    print(e)
+            elif opcion == 7:
+                try:
+                    app.eliminarProducto()
+                except Error as e:
+                    print(e)
+            elif opcion == 8:
+                print("Gracias por preferirnos. ¡Hasta luego!")
                 break
             else:
                 print("Opción no válida, por favor intente de nuevo.")
     except Error as e:
         print(e)
     finally:
-        app.cerrarConeccion()
+        app.cerrarConexion()
+
 if __name__ == "__main__":
     main()
+
