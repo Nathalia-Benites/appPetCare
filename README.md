@@ -11,11 +11,7 @@ A la hora de cuidar a nuestras mascotas debemos de considerar varios aspectos co
  
 ---
 ## Modelo Relacional
-![modeloRe](https://github.com/Nathalia-Benites/appPetCare/assets/167949641/ced73d1f-757e-4c8a-97bf-b1389eccb8ea)
-
-
-____
-**DESCARGAR SCRIPT SQL**
+![modeloEntidadRelacion](https://github.com/user-attachments/assets/8a206c21-e6c6-458e-ad3e-cee124e69001)
 
 -----
 ***Tablas Principales:***
