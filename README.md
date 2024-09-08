@@ -36,17 +36,16 @@ ____
 ## Desarrollo de propuesta
 Para esta propuesta se ha considerado los siguientes aspectos que se automatizará:
 
-- **Registro de usuarios:** Sistema de registro y autenticación mediante correo electrónico y número de teléfono para padres y usuarios interesados en productos para perros y gatos.
+- **Registro de usuarios:** Sistema de registro de usuarios interesados en productos para perros y gatos.
   
-- **Gestión de Pedidos:** Módulo para la realización, seguimiento y gestión de pedidos, incluyendo opciones de entrega y retiro del mismo. Cada producto incluye detalles como galería de imágenes, descripción, tamaños y colores disponibles, precios y reseñas de usuarios. Los productos pueden añadirse al carrito de compras con opciones para modificar cantidades y eliminar productos.
+- **Gestión de Pedidos:** Los productos pueden pedirse con opciones para modificar cantidades y eliminar productos.
   
-- **Base de Datos Relacional:** Implementación de una base de datos relacional que almacena y gestiona información detallada sobre con los usuarios, productos, pedidos, opiniones, notificaciones, métodos de pago y más.
+- **Base de Datos Relacional:** Implementación de una base de datos relacional que almacena y gestiona información detallada sobre con los usuarios, productos, pedidos, métodos de pago y más.
   
-- **Interfaz de Administración:** Desarrollo de un panel de control para la gestión de productos, categorías, precios, promociones y stock.
+- **Interfaz de Administración:** Desarrollo de un panel de control para la gestión de productos, categorías, precios y stock.
   
-- **Integración de Métodos de Pago:** El proceso de compra permite seleccionar direcciones de envío y métodos de pago (tarjeta de crédito, PayPal, etc.) antes de confirmar el pedido. Los usuarios pueden seguir el estado de sus pedidos y revisar el historial de compras anteriores. 
-  
-- **Soporte y Atención al Cliente:** Implementación de un sistema automatizado de soporte al cliente que incluye opciones como chat en vivo, correo electrónico y atención telefónica para una respuesta rápida a consultas y problemas.
+- **Integración de Métodos de Pago:** El proceso de compra permite seleccionar direcciones de envío y métodos de pago (tarjeta de crédito, PayPal, etc.) antes de confirmar el pedido. 
+
 ----
   ***Beneficios esperados:***
 -----------------------
