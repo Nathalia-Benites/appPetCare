@@ -19,7 +19,7 @@ A la hora de cuidar a nuestras mascotas debemos de considerar varios aspectos co
 |Tabla	| Descripción|
 |-------|-------------|
 | Cliente |Almacena la información básica de los usuarios, incluyendo nombre, dirección, correo electrónico, número de teléfono, ciudad, correo.|
-| Categoria del Producto|	Define las diferentes categorías bajo las cuales se clasifican los productos, como juguetes, ropa, alimentos, y productos de higiene.|
+| Categoria del Producto|	Define las diferentes categorías bajo las cuales se clasifican los productos, como juguetes, ropa, alimentos, y productos de salud e higiene.|
 |Productos |Contiene detalles específicos de cada producto, como nombre, descripción, precio, stock disponible, tamaño, color, y la categoría a la que pertenece.|
 |Pedidos |Almacena la información de los pedidos realizados por los usuarios, incluyendo la fecha del pedido, estado (pendiente, enviado, entregado), monto total, dirección de envío, y el método de pago utilizado|
 |Detalles del Pedido |Guarda los productos específicos incluidos en cada pedido, junto con la cantidad solicitada, precio unitario, y el monto total del detalle de pedido.|
@@ -49,4 +49,4 @@ Para esta propuesta se considerará la automatización y gestión de los siguien
 
 - La implementación de una interfaz intuitiva para el manejo de pedidos y productos mejora la experiencia del usuario, haciendo que el proceso de compra sea más fluido y satisfactorio.
 
-- La generación de facturas detalladas al finalizar un pedido asegura que los usuarios reciban un resumen claro de sus compras, incluyendo los productos adquiridos, el total a pagar y los impuestos aplicables.
+- La generación de facturas detalladas al finalizar un pedido asegura que los usuarios reciban un resumen claro de sus compras, incluyendo los productos adquiridos, el total a pagar y los impuestos.
