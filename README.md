@@ -33,22 +33,24 @@ ____
 
 ------
 ## Desarrollo de propuesta
-Para esta propuesta se ha considerado los siguientes aspectos que se automatizará:
+Para esta propuesta se considerará la automatización y gestión de los siguientes aspectos:
 
-- **Registro de usuarios:** Sistema de registro de usuarios interesados en productos para perros y gatos.
-  
-- **Gestión de Pedidos:** Los productos pueden pedirse con opciones para modificar cantidades y eliminar productos.
-  
-- **Base de Datos Relacional:** Implementación de una base de datos relacional que almacena y gestiona información detallada sobre con los usuarios, productos, pedidos, métodos de pago y más.
-  
-- **Interfaz de Administración:** Desarrollo de un panel de control para la gestión de productos, categorías, precios y stock.
-  
-- **Integración de Métodos de Pago:** El proceso de compra permite seleccionar direcciones de envío y métodos de pago (tarjeta de crédito, PayPal, etc.) antes de confirmar el pedido. 
+1. **Registro y Gestión de Usuarios:** Incluye la capacidad para registrar usuarios, gestionar direcciones de envío y métodos de pago, asegurando que cada cliente pueda administrar sus datos y opciones de pago.
 
+2. **Administración de Productos:** Facilita el registro y manejo de productos en diferentes categorías, permitiendo un control sobre el inventario y la disponibilidad de cada artículo.
+
+3. **Procesamiento de Pedidos:** Permite la creación y gestión de pedidos, incluyendo la adición y eliminación de productos en los pedidos, así como el cálculo del total con IVA y la generación de facturas detalladas.
+
+4. **Seguridad en el Almacenamiento de Datos:** Implementa el almacenamiento seguro de los datos de las tarjetas de crédito mediante hashing, protegiendo así la información sensible de los usuarios.
 ----
   ***Beneficios esperados:***
 -----------------------
-Se espera que AppPetCare:
-- Transforme la manera en que los dueños de mascotas acceden y adquieren productos para sus mascotas. La aplicación busca ofrecer una experiencia de compra conveniente. 
-- Optimice la gestión de inventarios y pedidos mediante tecnologías avanzadas, lo que reducirá los tiempos de espera y mejorará la disponibilidad de productos. 
-- Mejore el servicio al cliente proporcionando soporte rápido y personalizado, asegurando así una experiencia de usuario satisfactoria y segura.
+- La automatización de los procesos de registro, pedido y gestión de productos mejora la eficiencia operativa y reduce el tiempo necesario para realizar estas tareas manualmente.
+
+- El uso de hashing para almacenar datos de tarjetas de crédito garantiza que la información sensible de los usuarios esté protegida contra accesos no autorizados.
+
+- La capacidad para gestionar el stock de productos en tiempo real permite un control más preciso y evita problemas de sobreventa o falta de stock.
+
+- La implementación de una interfaz intuitiva para el manejo de pedidos y productos mejora la experiencia del usuario, haciendo que el proceso de compra sea más fluido y satisfactorio.
+
+- La generación de facturas detalladas al finalizar un pedido asegura que los usuarios reciban un resumen claro de sus compras, incluyendo los productos adquiridos, el total a pagar y los impuestos aplicables.
