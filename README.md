@@ -17,20 +17,19 @@ A la hora de cuidar a nuestras mascotas debemos de considerar varios aspectos co
 ____
 **DESCARGAR SCRIPT SQL**
 
-[Modelo Script](https://github.com/Nathalia-Benites/appPetCare/blob/main/Modelo%20relacional.sql)
-
 -----
 ***Tablas Principales:***
 
 |Tabla	| Descripción|
 |-------|-------------|
-| Usuarios |Almacena la información básica de los usuarios, incluyendo nombre, dirección, correo electrónico, número de teléfono, ciudad, correo.|
+| Cliente |Almacena la información básica de los usuarios, incluyendo nombre, dirección, correo electrónico, número de teléfono, ciudad, correo.|
 | Categoria del Producto|	Define las diferentes categorías bajo las cuales se clasifican los productos, como juguetes, ropa, alimentos, y productos de higiene.|
 |Productos |Contiene detalles específicos de cada producto, como nombre, descripción, precio, stock disponible, tamaño, color, y la categoría a la que pertenece.|
 |Pedidos |Almacena la información de los pedidos realizados por los usuarios, incluyendo la fecha del pedido, estado (pendiente, enviado, entregado), monto total, dirección de envío, y el método de pago utilizado|
 |Detalles del Pedido |Guarda los productos específicos incluidos en cada pedido, junto con la cantidad solicitada, precio unitario, y el monto total del detalle de pedido.|
-|Métodos de Pago| Almacena la información de los métodos de pago asociados a cada usuario, como el número de tarjeta encriptado, fecha de vencimiento, y tipo de tarjeta (crédito/débito).|
+|Métodos de Pago| Almacena la información de los métodos de pago asociados a cada usuario, como el número de tarjeta, fecha de vencimiento, y tipo de tarjeta (crédito/débito).|
 | Mascota |Registra cada mascota asociada a un usuario específico, proporcionando detalles como nombre, especie, raza, fecha de nacimiento, y una referencia al usuario propietario.|
+|Direccion_Envio|Almacena las direcciones de envío asociadas a los usuarios, incluyendo dirección, ciudad, estado/región, código postal, y país.|
 
 ------
 ## Desarrollo de propuesta
