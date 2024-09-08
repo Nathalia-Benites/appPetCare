@@ -1,5 +1,5 @@
 # AppPetCare
-A la hora de cuidar a nuestras mascotas debemos de considerar varios aspectos como alimentación, salud, baños y juegos. Pero tenemos a la tecnología como aliada para suministrar servicios que garanticen la calidad en los insumos. Es el caso de AppPetCare, es una iniciativa orientada a la creación de un programa dedicado a la venta de productos para el cuidado de mascotas domésticas, específicamente perros y gatos, facilitando al usuario su adquisición y brindándole un servicio al cliente excepcional. Este programa es una herramienta útil para gestionar las necesidades de las mascotas, porque ofrece una variedad de productos desde alimentos hasta juguetes. 
+A la hora de cuidar a nuestras mascotas debemos de considerar varios aspectos como alimentación, salud, baños y juegos. Pero tenemos a la tecnología como aliada para suministrar servicios que garanticen la calidad en los insumos. Es el caso de AppPetCare, es una iniciativa orientada a la creación de un programa dedicado a la venta de productos para el cuidado de mascotas domésticas, específicamente perros y gatos, facilitando al usuario su adquisición y brindándole un servicio al cliente excepcional. 
 
 
 ***Categorías:***
@@ -24,13 +24,11 @@ ____
 
 |Tabla	| Descripción|
 |-------|-------------|
-| Usuarios |Almacena la información básica de los usuarios, incluyendo nombre, correo electrónico, contraseña encriptada, número de teléfono, y fecha de creación de la cuenta.|
-| Direcciones |Permite a los usuarios gestionar múltiples direcciones de envío asociadas a su cuenta, con campos como dirección completa, ciudad, estado, y código postal|
+| Usuarios |Almacena la información básica de los usuarios, incluyendo nombre, dirección, correo electrónico, número de teléfono, ciudad, correo.|
 | Categoria del Producto|	Define las diferentes categorías bajo las cuales se clasifican los productos, como juguetes, ropa, alimentos, y productos de higiene.|
 |Productos |Contiene detalles específicos de cada producto, como nombre, descripción, precio, stock disponible, tamaño, color, y la categoría a la que pertenece.|
 |Pedidos |Almacena la información de los pedidos realizados por los usuarios, incluyendo la fecha del pedido, estado (pendiente, enviado, entregado), monto total, dirección de envío, y el método de pago utilizado|
 |Detalles del Pedido |Guarda los productos específicos incluidos en cada pedido, junto con la cantidad solicitada, precio unitario, y el monto total del detalle de pedido.|
-|Opiniones del Productos| Permite a los usuarios dejar opiniones y calificaciones sobre los productos comprados, con campos para la calificación (1-5 estrellas) y un comentario opcional.|
 |Métodos de Pago| Almacena la información de los métodos de pago asociados a cada usuario, como el número de tarjeta encriptado, fecha de vencimiento, y tipo de tarjeta (crédito/débito).|
 | Mascota |Registra cada mascota asociada a un usuario específico, proporcionando detalles como nombre, especie, raza, fecha de nacimiento, y una referencia al usuario propietario.|
 
