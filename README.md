@@ -6,6 +6,7 @@ AppPetCare es una aplicación que ayuda a las clínicas veterinarias a gestionar
 ----
 
 ***Contexto del Problema***
+---
 En una clínica veterinaria, hay mucha información que manejar: datos de los clientes, sus mascotas, productos en inventario, ventas realizadas, citas para consultas y pedidos de productos. Si todo se hace a mano o con sistemas separados, puede ser confuso y propenso a errores. AppPetCare resuelve esto al juntar toda esta información en un solo lugar.
 
 ***Análisis de Requerimientos***
