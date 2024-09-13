@@ -48,7 +48,7 @@ La aplicación está escrita en Python y usa MySQL para almacenar la informació
 - Iniciar el Programa: Ejecuta el archivo principal. La aplicación se conectará a la base de datos y mostrará el menú principal.
 - Seleccionar una Opción del Menú: Elige qué parte de la aplicación quieres usar: Clientes, Mascotas, Productos, Ventas, Citas o Pedidos.
 
-***Hacer Operaciones:***
+***Operaciones:***
 
 - Registrar: Introduce la información para añadir nuevos registros.
 - Mostrar: Ve la información que ya está registrada.
