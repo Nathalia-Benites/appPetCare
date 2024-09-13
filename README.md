@@ -1,4 +1,4 @@
-# AppPetCare 🐾
+# AppPetCare 🐾🐕🐈
 ***Introducción***
 ----
 AppPetCare es una aplicación que ayuda a las clínicas veterinarias a gestionar a sus clientes, mascotas, productos, ventas, citas y pedidos. Es fácil de usar y te ayudará a mantener todo en orden
@@ -50,22 +50,11 @@ La aplicación está escrita en Python y usa MySQL para almacenar la informació
 
 - **Iniciar el programa:** Ejecuta el archivo principal. La aplicación se conectará a la base de datos y mostrará el menú principal.
 - **Seleccionar una opción del menú:** Elige qué parte de la aplicación quieres usar: Clientes, Mascotas, Productos, Ventas, Citas o Pedidos.
- -------------------------------
-       MENÚ PRINCIPAL
- -------------------------------
- 1. Gestión de Clientes
- 2. Gestión de Mascotas
- 3. Gestión de Productos
- 4. Gestión de Ventas
- 5. Gestión de Citas
- 6. Gestión de Pedidos
- 7. Salir
-
 
 ***Operaciones:***
 
 - **Registrar:** Introduce la información para añadir nuevos registros.
 - **Mostrar:** Ve la información que ya está registrada.
 - **Actualizar/Eliminar:** Modifica o borra registros existentes.
-- **Salir:** Elige "Salir" del menú principal para cerrar la aplicación y desconectar la base de datos.
+- **Salir:** Elige "Salir" del menú principal para cerrar la aplicación y desconectar la base de datos. 
 
