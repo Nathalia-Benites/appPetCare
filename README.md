@@ -39,19 +39,19 @@ Aquí están las cosas que AppPetCare necesita hacer:
 
 La aplicación está escrita en Python y usa MySQL para almacenar la información. Aquí está cómo funciona:
 
-- Conexión a la Base de Datos: Al iniciar la aplicación, se conecta a la base de datos MySQL. Cuando terminas, se cierra la conexión.
-- Menú Principal: Muestra opciones para gestionar Clientes, Mascotas, Productos, Ventas, Citas y Pedidos.
-- Gestión de Datos: Cada sección te permite registrar nuevos datos, ver los datos existentes, y actualizar o eliminar datos cuando sea necesario.
+- **Conexión a la Base de Datos:** Al iniciar la aplicación, se conecta a la base de datos MySQL. Cuando terminas, se cierra la conexión.
+- **Menú Principal:** Muestra opciones para gestionar Clientes, Mascotas, Productos, Ventas, Citas y Pedidos.
+- **Gestión de Datos:** Cada sección te permite registrar nuevos datos, ver los datos existentes, y actualizar o eliminar datos cuando sea necesario.
 
 ***Guía de Uso***
 
-- Iniciar el Programa: Ejecuta el archivo principal. La aplicación se conectará a la base de datos y mostrará el menú principal.
-- Seleccionar una Opción del Menú: Elige qué parte de la aplicación quieres usar: Clientes, Mascotas, Productos, Ventas, Citas o Pedidos.
+- **Iniciar el Programa:** Ejecuta el archivo principal. La aplicación se conectará a la base de datos y mostrará el menú principal.
+- **Seleccionar una Opción del Menú:** Elige qué parte de la aplicación quieres usar: Clientes, Mascotas, Productos, Ventas, Citas o Pedidos.
 
 ***Operaciones:***
 
-- Registrar: Introduce la información para añadir nuevos registros.
-- Mostrar: Ve la información que ya está registrada.
-- Actualizar/Eliminar: Modifica o borra registros existentes.
-- Salir: Elige "Salir" del menú principal para cerrar la aplicación y desconectar la base de datos.
+- **Registrar:** Introduce la información para añadir nuevos registros.
+- **Mostrar:** Ve la información que ya está registrada.
+- **Actualizar/Eliminar:** Modifica o borra registros existentes.
+- **Salir:** Elige "Salir" del menú principal para cerrar la aplicación y desconectar la base de datos.
 
