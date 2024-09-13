@@ -34,6 +34,7 @@ Aquí están las cosas que AppPetCare necesita hacer:
 ***Diseño del Sistema***
 
 **Programa con Acceso a Datos**
+
 La aplicación está escrita en Python y usa MySQL para almacenar la información. Aquí está cómo funciona:
 
 - Conexión a la Base de Datos: Al iniciar la aplicación, se conecta a la base de datos MySQL. Cuando terminas, se cierra la conexión.
