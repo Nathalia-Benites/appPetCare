@@ -1,87 +1,109 @@
-from Data import AppPetCare
+from data import AppPetCare
 
+# -------------------------------
+#      MENÚ PRINCIPAL 🐾
+# -------------------------------
 def menu_principal():
-    print("""
-    -------------------------------
-          MENÚ PRINCIPAL
-    -------------------------------
-    ¡Te damos la bienvenida a nuestra App!
-    
-    1. Gestión de Clientes
-    2. Gestión de Mascotas
-    3. Gestión de Productos
-    4. Gestión de Ventas
-    5. Gestión de Citas
-    6. Gestión de Pedidos
-    7. Salir
-    """)
+    print("\033[94m" + """
+    =======================================
+              MENÚ PRINCIPAL 🐾
+    =======================================
+    1. Gestión de Clientes 🧑‍🤝‍🧑
+    2. Gestión de Mascotas 🐶🐱
+    3. Gestión de Productos 📦
+    4. Gestión de Ventas 🛒
+    5. Gestión de Citas 📅
+    6. Gestión de Pedidos 📝
+    7. Salir ❌
+    """ + "\033[0m")
 
+# -------------------------------
+#      GESTIÓN DE CLIENTES 🧑‍🤝‍🧑
+# -------------------------------
 def menu_gestion_clientes():
-    print("""
-    -------------------------------
-       GESTIÓN DE CLIENTES
-    -------------------------------
-    1. Registrar Cliente
-    2. Mostrar Clientes
-    3. Eliminar Cliente
-    4. Volver al Menú Principal
-    """)
+    print("\033[92m" + """
+    =======================================
+           GESTIÓN DE CLIENTES 🧑‍🤝‍🧑
+    =======================================
+    1. Registrar Cliente ✍️
+    2. Mostrar Clientes 📋
+    3. Eliminar Cliente ❌
+    4. Volver al Menú Principal 🔙
+    """ + "\033[0m")
 
+# -------------------------------
+#      GESTIÓN DE MASCOTAS 🐶🐱
+# -------------------------------
 def menu_gestion_mascotas():
-    print("""
-    -------------------------------
-       GESTIÓN DE MASCOTAS
-    -------------------------------
-    1. Registrar Mascota
-    2. Mostrar Mascotas
-    3. Eliminar Mascota
-    4. Volver al Menú Principal
-    """)
+    print("\033[35m" + """
+    =======================================
+           GESTIÓN DE MASCOTAS 🐶🐱
+    =======================================
+    1. Registrar Mascota ✍️
+    2. Mostrar Mascotas 📋
+    3. Eliminar Mascota ❌
+    4. Volver al Menú Principal 🔙
+    """ + "\033[0m")
 
+# -------------------------------
+#      GESTIÓN DE PRODUCTOS 📦
+# -------------------------------
 def menu_gestion_productos():
-    print("""
-    -------------------------------
-       GESTIÓN DE PRODUCTOS
-    -------------------------------
-    1. Registrar Producto
-    2. Mostrar Productos
-    3. Eliminar Producto
-    4. Volver al Menú Principal
-    """)
+    print("\033[96m" + """
+    =======================================
+           GESTIÓN DE PRODUCTOS 📦
+    =======================================
+    1. Registrar Producto ✍️
+    2. Mostrar Productos 📋
+    3. Eliminar Producto ❌
+    4. Volver al Menú Principal 🔙
+    """ + "\033[0m")
 
+# -------------------------------
+#      GESTIÓN DE VENTAS 🛒
+# -------------------------------
 def menu_gestion_ventas():
-    print("""
-    -------------------------------
-       GESTIÓN DE VENTAS
-    -------------------------------
-    1. Registrar Venta
-    2. Mostrar Ventas
-    3. Eliminar Venta
-    4. Volver al Menú Principal
-    """)
+    print("\033[95m" + """
+    =======================================
+           GESTIÓN DE VENTAS 🛒
+    =======================================
+    1. Registrar Venta ✍️
+    2. Mostrar Ventas 📋
+    3. Eliminar Venta ❌
+    4. Volver al Menú Principal 🔙
+    """ + "\033[0m")
 
+# -------------------------------
+#      GESTIÓN DE CITAS 📅
+# -------------------------------
 def menu_gestion_citas():
-    print("""
-    -------------------------------
-       GESTIÓN DE CITAS
-    -------------------------------
-    1. Registrar Cita
-    2. Mostrar Citas
-    3. Eliminar Cita
-    4. Volver al Menú Principal
-    """)
+    print("\033[91m" + """
+    =======================================
+           GESTIÓN DE CITAS 📅
+    =======================================
+    1. Registrar Cita ✍️
+    2. Mostrar Citas 📋
+    3. Eliminar Cita ❌
+    4. Volver al Menú Principal 🔙
+    """ + "\033[0m")
 
+# -------------------------------
+#      GESTIÓN DE PEDIDOS 📝
+# -------------------------------
 def menu_gestion_pedidos():
-    print("""
-    -------------------------------
-       GESTIÓN DE PEDIDOS
-    -------------------------------
-    1. Registrar Pedido
-    2. Mostrar Pedidos
-    3. Eliminar Pedido
-    4. Volver al Menú Principal
-    """)
+    print("\033[90m" + """
+    =======================================
+           GESTIÓN DE PEDIDOS 📝
+    =======================================
+    1. Registrar Pedido ✍️
+    2. Mostrar Pedidos 📋
+    3. Eliminar Pedido ❌
+    4. Volver al Menú Principal 🔙
+    """ + "\033[0m")
 
+# -------------------------------
+#        PROGRAMA PRINCIPAL 🐾
+# -------------------------------
 def main():
     app = AppPetCare()
 
@@ -103,7 +125,7 @@ def main():
                 elif opcion_cliente == '4':
                     break
                 else:
-                    print("❌ Opción no válida, intente de nuevo.")
+                    print("\033[91m❌ Opción no válida, intente de nuevo.\033[0m")
 
         elif opcion == '2':  # Gestión de Mascotas
             while True:
@@ -119,7 +141,7 @@ def main():
                 elif opcion_mascota == '4':
                     break
                 else:
-                    print("❌ Opción no válida, intente de nuevo.")
+                    print("\033[91m❌ Opción no válida, intente de nuevo.\033[0m")
 
         elif opcion == '3':  # Gestión de Productos
             while True:
@@ -135,7 +157,7 @@ def main():
                 elif opcion_producto == '4':
                     break
                 else:
-                    print("❌ Opción no válida, intente de nuevo.")
+                    print("\033[91m❌ Opción no válida, intente de nuevo.\033[0m")
 
         elif opcion == '4':  # Gestión de Ventas
             while True:
@@ -151,7 +173,7 @@ def main():
                 elif opcion_venta == '4':
                     break
                 else:
-                    print("❌ Opción no válida, intente de nuevo.")
+                    print("\033[91m❌ Opción no válida, intente de nuevo.\033[0m")
 
         elif opcion == '5':  # Gestión de Citas
             while True:
@@ -167,7 +189,7 @@ def main():
                 elif opcion_cita == '4':
                     break
                 else:
-                    print("❌ Opción no válida, intente de nuevo.")
+                    print("\033[91m❌ Opción no válida, intente de nuevo.\033[0m")
 
         elif opcion == '6':  # Gestión de Pedidos
             while True:
@@ -183,15 +205,15 @@ def main():
                 elif opcion_pedido == '4':
                     break
                 else:
-                    print("❌ Opción no válida, intente de nuevo.")
+                    print("\033[90m❌ Opción no válida, intente de nuevo.\033[0m")
 
         elif opcion == '7':  # Salir
             app.cerrarConexion()
-            print("Gracias por usar AppPetCare 🐕🐈. ¡Hasta pronto!")
+            print("\033[90mGracias por usar AppPetCare. ¡Hasta pronto! 👋\033[0m")
             break
 
         else:
-            print("❌ Opción no válida, intente de nuevo.")
+            print("\033[91m❌ Opción no válida, intente de nuevo.\033[0m")
 
 if __name__ == "__main__":
     main()
