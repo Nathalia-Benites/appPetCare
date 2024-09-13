@@ -187,7 +187,7 @@ def main():
 
         elif opcion == '7':  # Salir
             app.cerrarConexion()
-            print("Gracias por usar AppPetCare. ¡Hasta pronto!")
+            print("Gracias por usar AppPetCare 🐕🐈. ¡Hasta pronto!")
             break
 
         else:
