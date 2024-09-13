@@ -29,7 +29,7 @@ Aquí están las cosas que AppPetCare necesita hacer:
 
 ---
 ## ***Modelo Relacional***
-![modeloEntidadRelacion](https://github.com/user-attachments/assets/8a206c21-e6c6-458e-ad3e-cee124e69001)
+![modeloEntidadRelacion](https://github.com/user-attachments/assets/1d1334d1-de15-454a-9b6a-0aacd865f6eb)
 
 -----
 ***Diseño del Sistema***
