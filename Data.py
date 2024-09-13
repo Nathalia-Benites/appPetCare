@@ -1,6 +1,6 @@
 import mysql.connector
 from mysql.connector import Error
-
+from tabulate import tabulate
 class AppPetCare:
     def __init__(self):
         self.conectarBD()
@@ -9,7 +9,7 @@ class AppPetCare:
         try:
             self.conn = mysql.connector.connect(
                 host='localhost',
-                database='App_petCare',
+                database='petCare',
                 user='root',
                 password=''
             )
@@ -48,8 +48,8 @@ class AppPetCare:
         try:
             self.cursor.execute("SELECT * FROM CLIENTE")
             clientes = self.cursor.fetchall()
-            for cliente in clientes:
-                print(f"Cédula: {cliente[0]}, Nombre: {cliente[1]}, Dirección: {cliente[2]}, Teléfono: {cliente[4]}, Correo: {cliente[3]}, Ciudad: {cliente[5]}")
+            headers = ["Cédula", "Nombre", "Dirección", "Teléfono", "Correo", "Ciudad"]
+            print(tabulate(clientes, headers, tablefmt="fancy_grid"))
         except Error as e:
             print(f"❌ Error de MySQL: {e}")
 
@@ -85,8 +85,8 @@ class AppPetCare:
         try:
             self.cursor.execute("SELECT * FROM MASCOTA")
             mascotas = self.cursor.fetchall()
-            for mascota in mascotas:
-                print(f"ID Mascota: {mascota[0]}, Nombre: {mascota[1]}, Especie: {mascota[2]}, Raza: {mascota[3]}, Fecha de Nacimiento: {mascota[4]}, Dueño: {mascota[5]}")
+            headers = ["ID Mascota", "Nombre", "Especie", "Raza", "Fecha de Nacimiento", "Dueño"]
+            print(tabulate(mascotas, headers, tablefmt="fancy_grid"))
         except Error as e:
             print(f"❌ Error de MySQL: {e}")
 
@@ -121,8 +121,8 @@ class AppPetCare:
         try:
             self.cursor.execute("SELECT * FROM PRODUCTO")
             productos = self.cursor.fetchall()
-            for producto in productos:
-                print(f"ID Producto: {producto[0]}, Descripción: {producto[1]}, Precio: {producto[2]}, Categoría: {producto[3]}, Stock: {producto[4]}")
+            headers = ["ID Producto", "Descripción", "Precio", "ID Categoría", "Stock"]
+            print(tabulate(productos, headers, tablefmt="fancy_grid"))
         except Error as e:
             print(f"❌ Error de MySQL: {e}")
 
@@ -156,8 +156,8 @@ class AppPetCare:
         try:
             self.cursor.execute("SELECT * FROM VENTA")
             ventas = self.cursor.fetchall()
-            for venta in ventas:
-                print(f"ID Venta: {venta[0]}, Cantidad: {venta[1]}, Cliente: {venta[2]}, Producto: {venta[3]}")
+            headers = ["ID Venta", "Cantidad", "Cédula Cliente", "ID Producto"]
+            print(tabulate(ventas, headers, tablefmt="fancy_grid"))
         except Error as e:
             print(f"❌ Error de MySQL: {e}")
 
@@ -231,8 +231,8 @@ class AppPetCare:
             """
             self.cursor.execute(query)
             pedidos = self.cursor.fetchall()
-            for pedido in pedidos:
-                print(f"ID Pedido: {pedido[0]}, Cliente: {pedido[4]}, Fecha: {pedido[2]}, Total: {pedido[3]}")
+            headers = ["ID Pedido", "Cliente", "Fecha", "Total", "Nombre Cliente"]
+            print(tabulate(pedidos, headers, tablefmt="fancy_grid"))
         except Error as e:
             print(f"❌ Error de MySQL: {e}")
 
