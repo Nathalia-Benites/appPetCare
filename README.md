@@ -15,7 +15,7 @@ Aquí están las cosas que AppPetCare necesita hacer:
 - **Gestionar Mascotas:** Mantener información sobre las mascotas, como su nombre, especie, raza y edad.
 - **Gestionar Productos:** Registrar y gestionar los productos que se venden en la clínica.
 
-**Categorías de productos:**
+    **Categorías de productos:**
 
     - **Alimentos:** Pepas, snacks y suplementos.
     - **Juguetes:** Diversos clasificados por tamaño y tipo de mascota.
