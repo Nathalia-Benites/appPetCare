@@ -1,6 +1,9 @@
 # AppPetCare
-A la hora de cuidar a nuestras mascotas debemos de considerar varios aspectos como alimentación, salud, baños y juegos. Pero tenemos a la tecnología como aliada para suministrar servicios que garanticen la calidad en los insumos. Es el caso de AppPetCare, es una iniciativa orientada a la creación de un programa dedicado a la venta de productos para el cuidado de mascotas domésticas, específicamente perros y gatos, facilitando al usuario su adquisición y brindándole un servicio al cliente excepcional. 
+***Introducción***
+----
+AppPetCare es una aplicación que ayuda a las clínicas veterinarias a gestionar a sus clientes, mascotas, productos, ventas, citas y pedidos. Es fácil de usar y te ayudará a mantener todo en orden
 
+----
 
 ***Categorías:***
 
