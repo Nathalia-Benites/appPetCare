@@ -5,51 +5,46 @@ AppPetCare es una aplicación que ayuda a las clínicas veterinarias a gestionar
 
 ----
 
-***Categorías:***
+***Contexto del Problema***
+En una clínica veterinaria, hay mucha información que manejar: datos de los clientes, sus mascotas, productos en inventario, ventas realizadas, citas para consultas y pedidos de productos. Si todo se hace a mano o con sistemas separados, puede ser confuso y propenso a errores. AppPetCare resuelve esto al juntar toda esta información en un solo lugar.
+
+***Análisis de Requerimientos***
+Aquí están las cosas que AppPetCare necesita hacer:
+
+Gestionar Clientes: Añadir, actualizar, eliminar y ver los datos de los clientes.
+Gestionar Mascotas: Mantener información sobre las mascotas, como su nombre, especie, raza y edad.
+Gestionar Productos: Registrar y gestionar los productos que se venden en la clínica.
+**Categorías de productos:**
 
 - **Alimentos:** Pepas, snacks y suplementos.
 - **Juguetes:** Diversos clasificados por tamaño y tipo de mascota.
 - **Ropa y Accesorios:** Ropa para diferentes tamaños, collares, correas, camas, casas, platos.
 - **Salud y Cuidado:** Productos de higiene, vitaminas, pipetas, pastillas, pasta dental, cepillos, champús, cremas, arenas.
- 
+Gestionar Ventas: Registrar, mostrar y eliminar las ventas de productos.
+Gestionar Citas: Programar, ver y cancelar citas para las mascotas.
+Gestionar Pedidos: Registrar, mostrar y eliminar los pedidos de productos realizados por los clientes. 
+
 ---
-## Modelo Relacional
+## ***Modelo Relacional***
 ![modeloEntidadRelacion](https://github.com/user-attachments/assets/8a206c21-e6c6-458e-ad3e-cee124e69001)
 
 -----
-***Tablas Principales:***
+***Diseño del Sistema***
+Programa con Acceso a Datos
+La aplicación está escrita en Python y usa MySQL para almacenar la información. Aquí está cómo funciona:
 
-|Tabla	| Descripción|
-|-------|-------------|
-| Cliente |Almacena la información básica de los usuarios, incluyendo nombre, dirección, correo electrónico, número de teléfono, ciudad, correo.|
-| Categoria del Producto|	Define las diferentes categorías bajo las cuales se clasifican los productos, como juguetes, ropa, alimentos, y productos de salud e higiene.|
-|Productos |Contiene detalles específicos de cada producto, como nombre, descripción, precio, stock disponible, tamaño, color, y la categoría a la que pertenece.|
-|Pedidos |Almacena la información de los pedidos realizados por los usuarios, incluyendo la fecha del pedido, estado (pendiente, enviado, entregado), monto total, dirección de envío, y el método de pago utilizado|
-|Detalles del Pedido |Guarda los productos específicos incluidos en cada pedido, junto con la cantidad solicitada, precio unitario, y el monto total del detalle de pedido.|
-|Métodos de Pago| Almacena la información de los métodos de pago asociados a cada usuario, como el número de tarjeta, fecha de vencimiento, y tipo de tarjeta (crédito/débito).|
-| Mascota |Registra cada mascota asociada a un usuario específico, proporcionando detalles como nombre, especie, raza, fecha de nacimiento, y una referencia al usuario propietario.|
-|Direccion_Envio|Almacena las direcciones de envío asociadas a los usuarios, incluyendo dirección, ciudad, estado/región, código postal, y país.|
+Conexión a la Base de Datos: Al iniciar la aplicación, se conecta a la base de datos MySQL. Cuando terminas, se cierra la conexión.
+Menú Principal: Muestra opciones para gestionar Clientes, Mascotas, Productos, Ventas, Citas y Pedidos.
+Gestión de Datos: Cada sección te permite registrar nuevos datos, ver los datos existentes, y actualizar o eliminar datos cuando sea necesario.
+Guía de Uso
+Iniciar el Programa: Ejecuta el archivo principal. La aplicación se conectará a la base de datos y mostrará el menú principal.
 
-------
-## Desarrollo de propuesta
-Para esta propuesta se considerará la automatización y gestión de los siguientes aspectos:
+Seleccionar una Opción del Menú: Elige qué parte de la aplicación quieres usar: Clientes, Mascotas, Productos, Ventas, Citas o Pedidos.
 
-1. **Registro y Gestión de Usuarios:** Incluye la capacidad para registrar usuarios, gestionar direcciones de envío y métodos de pago, asegurando que cada cliente pueda administrar sus datos y opciones de pago.
+Hacer Operaciones:
 
-2. **Administración de Productos:** Facilita el registro y manejo de productos en diferentes categorías, permitiendo un control sobre el inventario y la disponibilidad de cada artículo.
+Registrar: Introduce la información para añadir nuevos registros.
+Mostrar: Ve la información que ya está registrada.
+Actualizar/Eliminar: Modifica o borra registros existentes.
+Salir: Elige "Salir" del menú principal para cerrar la aplicación y desconectar la base de datos.
 
-3. **Procesamiento de Pedidos:** Permite la creación y gestión de pedidos, incluyendo la adición y eliminación de productos en los pedidos, así como el cálculo del total con IVA y la generación de facturas detalladas.
-
-4. **Seguridad en el Almacenamiento de Datos:** Implementa el almacenamiento seguro de los datos de las tarjetas de crédito mediante hashing, protegiendo así la información sensible de los usuarios.
-----
-  ***Beneficios esperados:***
------------------------
-- La automatización de los procesos de registro, pedido y gestión de productos mejora la eficiencia operativa y reduce el tiempo necesario para realizar estas tareas manualmente.
-
-- El uso de hashing para almacenar datos de tarjetas de crédito garantiza que la información sensible de los usuarios esté protegida contra accesos no autorizados.
-
-- La capacidad para gestionar el stock de productos en tiempo real permite un control más preciso y evita problemas de sobreventa o falta de stock.
-
-- La implementación de una interfaz intuitiva para el manejo de pedidos y productos mejora la experiencia del usuario, haciendo que el proceso de compra sea más fluido y satisfactorio.
-
-- La generación de facturas detalladas al finalizar un pedido asegura que los usuarios reciban un resumen claro de sus compras, incluyendo los productos adquiridos, el total a pagar y los impuestos.
